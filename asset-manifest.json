@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio2/static/css/main.5ca02296.css",
-    "main.js": "/portfolio2/static/js/main.a46df618.js",
-    "static/media/reactParallax.jpg": "/portfolio2/static/media/reactParallax.6f0d02a0def925fc9d7f.jpg",
-    "static/media/reactWeather.jpg": "/portfolio2/static/media/reactWeather.a1988356c4f5a620716e.jpg",
-    "static/media/reactSmooth.jpg": "/portfolio2/static/media/reactSmooth.a2ffb0a8d6db6a651603.jpg",
-    "static/media/arrayDestruct.jpg": "/portfolio2/static/media/arrayDestruct.84671dfd109d4de76bae.jpg",
-    "static/media/navbar.jpg": "/portfolio2/static/media/navbar.7ce4ddd4bd6a2fa48cd5.jpg",
+    "main.css": "/portfolio2/static/css/main.6d1a45c2.css",
+    "main.js": "/portfolio2/static/js/main.4d9bfe98.js",
+    "static/media/chat.png": "/portfolio2/static/media/chat.d5be0080382b89de4a99.png",
+    "static/media/movies1.jpg": "/portfolio2/static/media/movies1.32936849e2fe4a24a9bf.jpg",
+    "static/media/robots1.jpg": "/portfolio2/static/media/robots1.2cfb6d0eac54dbd3dd51.jpg",
+    "static/media/face1.jpg": "/portfolio2/static/media/face1.13346019e6c5185597f1.jpg",
     "static/media/vineeth2.png": "/portfolio2/static/media/vineeth2.a52afc162e21c23abaf5.png",
-    "static/media/installNode.jpg": "/portfolio2/static/media/installNode.16b2cb6d162eaa8d6fb5.jpg",
+    "static/media/todo.jpg": "/portfolio2/static/media/todo.f3f7ab9c55d3e3254ece.jpg",
     "static/media/react.png": "/portfolio2/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/tic.jpg": "/portfolio2/static/media/tic.2933f92c4c3d366152b0.jpg",
     "static/media/github.png": "/portfolio2/static/media/github.3b9e32903aa89111875d.png",
     "static/media/html.png": "/portfolio2/static/media/html.2ba4fabc69a89a8f71e6.png",
     "static/media/tailwind.png": "/portfolio2/static/media/tailwind.e47ac876b8d4d0bba47a.png",
     "static/media/css.png": "/portfolio2/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/javascript.png": "/portfolio2/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/portfolio2/index.html",
-    "main.5ca02296.css.map": "/portfolio2/static/css/main.5ca02296.css.map",
-    "main.a46df618.js.map": "/portfolio2/static/js/main.a46df618.js.map"
+    "main.6d1a45c2.css.map": "/portfolio2/static/css/main.6d1a45c2.css.map",
+    "main.4d9bfe98.js.map": "/portfolio2/static/js/main.4d9bfe98.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ca02296.css",
-    "static/js/main.a46df618.js"
+    "static/css/main.6d1a45c2.css",
+    "static/js/main.4d9bfe98.js"
   ]
 }
