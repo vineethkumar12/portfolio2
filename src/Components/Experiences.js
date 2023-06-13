@@ -5,8 +5,7 @@ import css from '../assets/css.png'
 import react from '../assets/react.png'
 import javascript from '../assets/javascript.png'
 import tailwind from '../assets/tailwind.png' 
-
-
+import Tilt from 'react-tilt'
 const experience =[
     { id:1, 
         nam:"React",
@@ -49,22 +48,23 @@ export const Experiences = () => {
                  <p className='py-6'> I learned this kind of technologies</p>
              </div>
           
-          
+          <Tilt options={{ max : 25 }} >
            <div className=' grid  text-center py-8  gap-8 px-12 sm:px-0 md:grid-cols-3 sm:grid-cols-2'>
              
                {  experience.map((src,i)=>{
            
-             return (<div className={`shadow-md ${experience[i].st} rounded-lg`}>
-                  <img  src={experience[i].src} key={experience[i].id} alt="" className='hover:scale-125 w-20 mx-auto h-24 mt-3 rounded-md  cursor-pointer duration-200'/>
+             return (<div key={experience[i].id} className={`shadow-md ${experience[i].st} rounded-lg`}>
+                  <img  src={experience[i].src}  alt="" className='hover:scale-125 w-20 mx-auto h-24 mt-3 rounded-md  cursor-pointer duration-200'/>
                     <p className='mt-4'>{experience[i].nam}</p>
               </div>)
+             
 
-})  }
+})  }    
 
 
            </div>
 
-
+           </Tilt>
 
         </div>
 

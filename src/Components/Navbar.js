@@ -39,7 +39,7 @@ link:"contact",
   
   return ( 
     <div >
-    <div className='flex bg-yellow-500  fixed  justify-between items-center  w-full h-20 px-4' > 
+    <div className='flex bg-yellow-500  fixed  justify-between items-center  z-10 w-full h-20 px-4' > 
      <div className='flex' > 
      <FontAwesomeIcon  className=" text-red-600 ml-2 mt-2"icon={ faHeart} beat />
      <h1 className='ml-2 font-a text-5xl'>vineeth</h1> 

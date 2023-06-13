@@ -4,7 +4,8 @@ import movies1 from '../assets/portfolio/movies1.jpg'
 import tic from '../assets/portfolio/tic.jpg'
 import face1 from '../assets/portfolio/face1.jpg'
 import robots1 from '../assets/portfolio/robots1.jpg' 
-import todo from '../assets/portfolio/todo.jpg'
+import stopwatch from '../assets/portfolio/stopwatch.jpg' 
+import Tilt from 'react-tilt'
 export const Portfolio = () => { 
 
 const portfolio =[
@@ -35,9 +36,9 @@ const portfolio =[
     
  },
     { id:6,
-    src: todo,
-    link1:"https://vineethkumar12.github.io/TodoApp/",
-    name:"Todo Application"
+    src: stopwatch,
+    link1:"https://vineethkumar12.github.io/stopwatch/",
+    name:"Stop Watch"
   }
                                    
 ]
@@ -56,9 +57,9 @@ const portfolio =[
 
            { portfolio.map(( src,id)=> {
              
-             return( 
-                <div className='shadow-md shadow-gray-500 rounded-lg'>
-                   <a href={src.link1}  > <img src={src.src}  key={id} alt="v "  className='hover:scale-105 duration-200 rounded-md cursor-pointer'/></a>
+             return(  <Tilt>
+                <div key={id}  className='shadow-md shadow-gray-500 rounded-lg'>
+                   <a href={src.link1}   > <img src={src.src}  alt="v "  className='hover:scale-105 duration-200 rounded-md cursor-pointer'/></a>
                      <div className=' flex justify-center items-center'>
                      <a href={src.link1}  >  <h1 className='  px-6 py-3 duration-150 hover:scale-105'>{src.name}</h1> </a>
                        
@@ -67,7 +68,7 @@ const portfolio =[
                 </div> 
               
             
-             )
+                </Tilt>  )
 
            }) }
            </div>
