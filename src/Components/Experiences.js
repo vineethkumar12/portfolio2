@@ -6,6 +6,7 @@ import react from '../assets/react.png'
 import javascript from '../assets/javascript.png'
 import tailwind from '../assets/tailwind.png' 
 import Tilt from 'react-tilt'
+import './N.css'
 const experience =[
     { id:1, 
         nam:"React",
@@ -53,7 +54,7 @@ export const Experiences = () => {
              
                {  experience.map((src,i)=>{
            
-             return (<div key={experience[i].id} className={`shadow-md ${experience[i].st} rounded-lg`}>
+             return (<div key={experience[i].id} className={`  animate shadow-md ${experience[i].st} rounded-lg`}>
                   <img  src={experience[i].src}  alt="" className='hover:scale-125 w-20 mx-auto h-24 mt-3 rounded-md  cursor-pointer duration-200'/>
                     <p className='mt-4'>{experience[i].nam}</p>
               </div>)

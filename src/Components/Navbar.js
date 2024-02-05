@@ -49,12 +49,12 @@ link:"contact",
 
 
 <div >
-     <ul className="hidden md:flex  space-x-9   " >
+     <ul className="hidden md:flex  space-x-9   mr-16 " >
      {  links.map((link,i)=>{
  
  return (    
-           <li  key={link.id} className=" visited:text-red-700  hover:underline capitalize flex justify-between cursor-pointer text-gray-700 hover:scale-125 duration-200 font-medium "> 
-           < Link  to={links[i].link} smooth={true} offset={50} spy={true} duration={500} >
+           <li  key={link.id} className="Link visited:text-red-700 hover:underline capitalize flex justify-between cursor-pointer text-gray-700 hover:scale-125 duration-200 font-medium "> 
+           < Link  to={links[i].link}  smooth={true} offset={50} spy={true} duration={500} >
            
            {links[i].link} 
            

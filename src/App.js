@@ -12,7 +12,7 @@ function App() {
 
 // const a="grgjkhjgkkgdkhjtgkjrigjjjjjjjjjjjjjjj"
   return (
-    <div > 
+    <div className="App"> 
    
 <Navbar/> 
 
