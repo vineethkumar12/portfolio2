@@ -12,8 +12,8 @@ export const Home = () => {
         <div className="text-white ">
           <h2 className="text-5xl mb-3 font-bold">Hi, I'm Vineeth kumar</h2>
           <p className="text-gray-500">
-            I'm vineeth, a final-year BTech student at Kakatiya Institute of
-            technology and science College, deeply passionate about the software
+            a final-year BTech student at Kakatiya Institute of technology and
+            science warangal College, deeply passionate about the software
             field, particularly in crafting innovative web applications using
             technologies like React and CSS
           </p>
