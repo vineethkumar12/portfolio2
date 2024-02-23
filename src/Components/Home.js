@@ -34,7 +34,7 @@ export const Home = () => {
         <div className="  ml-8   ">
           <img
             src={h}
-            className=" rounded-md h-64  mt-16 md:rounded-md md:h-auto "
+            className=" image ml-16 mt-16 md:rounded-md md:h-auto "
             alt="vineeth"
           />
         </div>

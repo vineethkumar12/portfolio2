@@ -60,11 +60,14 @@ export const Portfolio = () => {
           <p className="py-6"> Check out some of my projects right here</p>
         </div>
 
-        <div className=" grid gap-8 px-12 sm:px-0 md:grid-cols-3 sm:grid-cols-2">
+        <div className=" grid gap-8 px-12  sm:px-0 md:grid-cols-3 sm:grid-cols-2">
           {portfolio.map((src, id) => {
             return (
               <Tilt>
-                <div key={id} className="shadow-md shadow-gray-500 rounded-lg">
+                <div
+                  key={id}
+                  className="shadow-md overflow-hidden shadow-gray-500 rounded-lg"
+                >
                   <a href={src.link1}>
                     {" "}
                     <img
