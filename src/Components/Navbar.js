@@ -49,7 +49,7 @@ const Navbar = () => {
               return (
                 <li
                   key={link.id}
-                  className="Link text-yellow-500 visited:text-red-700 hover:underline capitalize flex justify-between cursor-pointer text-gray-700 hover:scale-125 duration-200 font-medium "
+                  className="Link text-yellow-500 visited:text-red-700 hover:underline capitalize flex justify-between cursor-pointer  hover:scale-125 duration-200 font-medium "
                 >
                   <Link
                     to={links[i].link}
@@ -66,7 +66,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div onClick={() => setnav(!nav)} className="md:hidden">
+        <div onClick={() => setnav(!nav)} className="md:hidden text-yellow-500">
           {nav ? (
             <FontAwesomeIcon className="cursor-pointer " icon={faTimes} />
           ) : (
@@ -75,12 +75,12 @@ const Navbar = () => {
         </div>
 
         {nav && (
-          <ul className="flex  md:hidden   j flex-col absolute  justify-center  h-96 w-56 right-0 mb-3 rounded-lg items-center ml-9    bg-gradient-to-b from-gray-800 via-black  to-gray-800 text-white-500   ">
+          <ul className="flex  md:hidden   text-yellow-500 j flex-col absolute  justify-center  h-96 w-56 right-0 mb-3 rounded-lg items-center ml-9    bg-gradient-to-b from-gray-800 via-black  to-gray-800 text-white-500   ">
             {links.map((link, i) => {
               return (
                 <li
                   key={link.id}
-                  className=" hover:underline capitalize flex justify-between cursor-pointer text-gray-700 hover:scale-125 duration-200 font-medium "
+                  className=" hover:underline capitalize flex justify-between cursor-pointer  hover:scale-125 duration-200 font-medium "
                 >
                   <Link
                     onClick={() => setnav(!nav)}
