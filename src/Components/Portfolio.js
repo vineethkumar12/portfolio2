@@ -3,7 +3,7 @@ import chat from "../assets/portfolio/chat.png";
 import movies1 from "../assets/portfolio/movies1.jpg";
 import tic from "../assets/portfolio/tic.jpg";
 import face1 from "../assets/portfolio/face1.jpg";
-import robots1 from "../assets/portfolio/robots1.jpg";
+import robots1 from "../assets/portfolio/whatsapp-chat-analyser.png";
 import stopwatch from "../assets/portfolio/stopwatch.jpg";
 import Tilt from "react-tilt";
 export const Portfolio = () => {
@@ -35,8 +35,9 @@ export const Portfolio = () => {
     {
       id: 5,
       src: robots1,
-      link1: "https://vineethkumar12.github.io/Robots/",
-      name: "Robots Application",
+      link1:
+        "https://vineethkumar12-whatsapp-chat-analayzer-app-3sz1u3.streamlit.app/",
+      name: "Whatsapp-chat-sentiment analyser",
     },
     {
       id: 6,
