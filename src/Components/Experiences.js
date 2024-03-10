@@ -19,7 +19,7 @@ const experience = [
 export const Experiences = () => {
   return (
     <div
-      id="experience"
+      id="Skills"
       className="bg-gradient-to-b from-gray-800 to-black text-white-500   w-full text-white md:h-screen"
     >
       <div className="flex flex-col justify-center  w-full h-full mx-auto  p-4 max-w-screen-lg">
@@ -31,7 +31,7 @@ export const Experiences = () => {
         </div>
 
         <Tilt options={{ max: 25 }}>
-          <div className=" grid  text-center py-8  gap-8 px-12 sm:px-0 md:grid-cols-3 sm:grid-cols-2">
+          <div className=" grid  text-center py-8  mb-10 md:-mb-20 gap-8 px-12 sm:px-0 md:grid-cols-3 sm:grid-cols-2">
             {experience.map((src, i) => {
               return (
                 <div

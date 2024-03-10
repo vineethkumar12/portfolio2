@@ -48,8 +48,8 @@ export const Portfolio = () => {
 
   return (
     <div
-      id="Portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 text-white-500   w-full text-white md:h-screen"
+      id="Projects"
+      className="bg-gradient-to-b from-black to-gray-800 text-white-500    w-full text-white md:h-screen"
     >
       <div className="flex flex-col justify-center w-full h-full mx-auto  p-4 max-w-screen-lg">
         <div className=" mt-12">
@@ -60,7 +60,7 @@ export const Portfolio = () => {
           <p className="py-6"> Check out some of my projects right here</p>
         </div>
 
-        <div className=" grid gap-8 px-12  sm:px-0 md:grid-cols-3 sm:grid-cols-2">
+        <div className=" grid gap-8 px-12  mb-10 md:-mb-20  sm:px-0 md:grid-cols-3 sm:grid-cols-2">
           {portfolio.map((src, id) => {
             return (
               <Tilt>

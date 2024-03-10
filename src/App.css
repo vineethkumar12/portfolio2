@@ -1,15 +1,13 @@
-.b{
-   /* background:
+.b {
+  /* background:
     linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
     linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
     linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
     linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
     background-size: 100px 100px;
-    background-color: #EC173A;*/ 
-    background-color: yellowgreen;
-
-
+    background-color: #EC173A;*/
+  background-color: yellowgreen;
 }
-body{
-    background-color: gray;  
+body {
+  background-color: gray;
 }
