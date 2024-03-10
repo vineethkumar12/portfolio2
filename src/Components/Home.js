@@ -9,7 +9,7 @@ export const Home = () => {
       className="w-full    h-screen bg-gradient-to-b   from-black to-gray-800 "
     >
       <div className=" flex  max-w-screen-lg flex-col mx-auto h-full justify-center items-center  px-4 md:flex-row   ">
-        <div className="text-white  mt-52  md:m-0">
+        <div className="text-white  mt-40  md:m-0">
           <h2 className="text-5xl mb-3    text-yellow-500  font-light font-a">
             Hi, I'm Vineeth kumar
           </h2>
