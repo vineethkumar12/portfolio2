@@ -50,11 +50,11 @@ export const Portfolio = () => {
   return (
     <div
       id="Projects"
-      className="bg-gradient-to-b from-black to-gray-800 text-white-500    w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-black to-gray-800 text-white-500  text-white   w-full  md:h-screen"
     >
       <div className="flex flex-col justify-center w-full h-full mx-auto  p-4 max-w-screen-lg">
         <div className=" mt-12">
-          <p className="font-bold border-b-4   border-gray-500 w-32  text-4xl ">
+          <p className="font-bold border-b-4  text-yellow-500  border-gray-500 w-32  text-4xl ">
             {" "}
             Projects
           </p>

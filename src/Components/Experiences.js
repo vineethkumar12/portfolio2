@@ -20,11 +20,11 @@ export const Experiences = () => {
   return (
     <div
       id="Skills"
-      className="bg-gradient-to-b from-gray-800 to-black text-white-500   w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-gray-800 to-black text-white-500 text-white  w-full md:h-screen"
     >
       <div className="flex flex-col justify-center  w-full h-full mx-auto  p-4 max-w-screen-lg">
         <div className="mt-5">
-          <p className="font-bold border-b-4   border-gray-500  text-4xl   w-24">
+          <p className="font-bold border-b-4   border-gray-500  text-4xl  text-yellow-500   w-24">
             Skills
           </p>
           <p className="py-6"> I learned this kind of technologies</p>

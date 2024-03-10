@@ -32,19 +32,15 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="flex bg-yellow-500  fixed  justify-between items-center  z-10 w-full h-20 px-4">
+      <div className="flex  fixed  justify-between items-center  z-10 w-full h-20 px-4">
         <div className="flex">
-          <FontAwesomeIcon
-            className=" text-red-600 ml-2 mt-2"
-            icon={faHeart}
-            beat
-          />
-          <h1 className="ml-2 font-a text-5xl">vineeth</h1>
-          <FontAwesomeIcon
-            className=" text-red-600 ml-2 mt-2"
-            icon={faHeart}
-            beat
-          />
+          <div className="   animate-pulse  text-5xl hover:animate-bounce">
+            {" "}
+            🕸️
+          </div>
+          <div>
+            <h1 className="ml-2 font-a text-5xl text-yellow-500">vineeth</h1>
+          </div>
         </div>
 
         <div>
@@ -53,7 +49,7 @@ const Navbar = () => {
               return (
                 <li
                   key={link.id}
-                  className="Link visited:text-red-700 hover:underline capitalize flex justify-between cursor-pointer text-gray-700 hover:scale-125 duration-200 font-medium "
+                  className="Link text-yellow-500 visited:text-red-700 hover:underline capitalize flex justify-between cursor-pointer text-gray-700 hover:scale-125 duration-200 font-medium "
                 >
                   <Link
                     to={links[i].link}
