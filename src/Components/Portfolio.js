@@ -4,46 +4,46 @@ import movies1 from "../assets/portfolio/movies1.jpg";
 import tic from "../assets/portfolio/tic.jpg";
 import face1 from "../assets/portfolio/face1.jpg";
 import robots1 from "../assets/portfolio/whatsapp-chat-analyser.png";
-import stopwatch from "../assets/portfolio/stopwatch.jpg";
+import Parkandgo from "../assets/parkandgo.png";
 import Tilt from "react-tilt";
 export const Portfolio = () => {
   const portfolio = [
     {
       id: 1,
+      src: Parkandgo,
+      link1: "https://parkngo.csre.in ",
+      name: "Park and GO",
+    },
+    {
+      id: 2,
       src: chat,
       link1: "https://vineethkumar12.github.io/chatapplication/",
       name: "Chat Application",
     },
     {
-      id: 2,
+      id: 3,
       src: movies1,
       link1: "https://vineethkumar12.github.io/Moviesappwithalan/",
       name: "Moviesapp with Alan",
     },
     {
-      id: 3,
+      id: 4,
       src: tic,
       link1: "https://vineethkumar12.github.io/tic-toc-toe/",
       name: "Tic-Toc-Toe",
     },
     {
-      id: 4,
+      id: 5,
       src: face1,
       link1: "https://vineethkumar12.github.io/facedetectionapp/",
       name: "Face Detection Application",
     },
     {
-      id: 5,
+      id: 6,
       src: robots1,
       link1:
         "https://vineethkumar12-whatsapp-chat-analayzer-app-3sz1u3.streamlit.app/",
       name: "Whatsapp-chat-sentiment analyser",
-    },
-    {
-      id: 6,
-      src: stopwatch,
-      link1: "https://vineethkumar12.github.io/stopwatch/",
-      name: "Stop Watch",
     },
   ];
 
