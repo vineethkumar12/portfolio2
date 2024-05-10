@@ -69,7 +69,7 @@ export const Portfolio = () => {
                   key={id}
                   className="shadow-md overflow-hidden shadow-gray-500 rounded-lg"
                 >
-                  <a href={src.link1}>
+                  <a href={src.link1} target="new">
                     {" "}
                     <img
                       src={src.src}
