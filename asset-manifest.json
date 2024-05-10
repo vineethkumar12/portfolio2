@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio2/static/css/main.c2b2427d.css",
-    "main.js": "/portfolio2/static/js/main.13b6359f.js",
-    "static/media/chat.png": "/portfolio2/static/media/chat.d5be0080382b89de4a99.png",
-    "static/media/vineeth3.png": "/portfolio2/static/media/vineeth3.649e07f7e7101787b7ff.png",
-    "static/media/movies1.jpg": "/portfolio2/static/media/movies1.32936849e2fe4a24a9bf.jpg",
-    "static/media/whatsapp-chat-analyser.png": "/portfolio2/static/media/whatsapp-chat-analyser.c8c9b2cbf3a18715416c.png",
-    "static/media/face1.jpg": "/portfolio2/static/media/face1.13346019e6c5185597f1.jpg",
-    "static/media/react.png": "/portfolio2/static/media/react.0cf951a69d8e58f83f9d.png",
-    "static/media/stopwatch.jpg": "/portfolio2/static/media/stopwatch.8df59625ddc8be390f4b.jpg",
-    "static/media/tic.jpg": "/portfolio2/static/media/tic.2933f92c4c3d366152b0.jpg",
-    "static/media/github.png": "/portfolio2/static/media/github.3b9e32903aa89111875d.png",
-    "static/media/html.png": "/portfolio2/static/media/html.2ba4fabc69a89a8f71e6.png",
-    "static/media/tailwind.png": "/portfolio2/static/media/tailwind.e47ac876b8d4d0bba47a.png",
-    "static/media/css.png": "/portfolio2/static/media/css.69a82c2d9e45c933a9cb.png",
-    "static/media/javascript.png": "/portfolio2/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
-    "index.html": "/portfolio2/index.html",
-    "main.c2b2427d.css.map": "/portfolio2/static/css/main.c2b2427d.css.map",
-    "main.13b6359f.js.map": "/portfolio2/static/js/main.13b6359f.js.map"
+    "main.css": "/static/css/main.c2b2427d.css",
+    "main.js": "/static/js/main.d4927afb.js",
+    "static/media/parkandgo.png": "/static/media/parkandgo.7940a3370ff9f97478ef.png",
+    "static/media/chat.png": "/static/media/chat.d5be0080382b89de4a99.png",
+    "static/media/vineeth3.png": "/static/media/vineeth3.649e07f7e7101787b7ff.png",
+    "static/media/movies1.jpg": "/static/media/movies1.32936849e2fe4a24a9bf.jpg",
+    "static/media/whatsapp-chat-analyser.png": "/static/media/whatsapp-chat-analyser.c8c9b2cbf3a18715416c.png",
+    "static/media/face1.jpg": "/static/media/face1.13346019e6c5185597f1.jpg",
+    "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/tic.jpg": "/static/media/tic.2933f92c4c3d366152b0.jpg",
+    "static/media/github.png": "/static/media/github.3b9e32903aa89111875d.png",
+    "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/tailwind.png": "/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "index.html": "/index.html",
+    "main.c2b2427d.css.map": "/static/css/main.c2b2427d.css.map",
+    "main.d4927afb.js.map": "/static/js/main.d4927afb.js.map"
   },
   "entrypoints": [
     "static/css/main.c2b2427d.css",
-    "static/js/main.13b6359f.js"
+    "static/js/main.d4927afb.js"
   ]
 }
