@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.c2b2427d.css",
-    "main.js": "/static/js/main.1313011c.js",
+    "main.js": "/static/js/main.1733adfd.js",
     "static/media/parkandgo.png": "/static/media/parkandgo.7940a3370ff9f97478ef.png",
+    "static/media/avengers.png": "/static/media/avengers.eb091be91f743368ea65.png",
     "static/media/chat.png": "/static/media/chat.d5be0080382b89de4a99.png",
     "static/media/vineeth3.png": "/static/media/vineeth3.649e07f7e7101787b7ff.png",
-    "static/media/movies1.jpg": "/static/media/movies1.32936849e2fe4a24a9bf.jpg",
     "static/media/whatsapp-chat-analyser.png": "/static/media/whatsapp-chat-analyser.c8c9b2cbf3a18715416c.png",
     "static/media/face1.jpg": "/static/media/face1.13346019e6c5185597f1.jpg",
     "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
@@ -17,10 +17,10 @@
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
     "main.c2b2427d.css.map": "/static/css/main.c2b2427d.css.map",
-    "main.1313011c.js.map": "/static/js/main.1313011c.js.map"
+    "main.1733adfd.js.map": "/static/js/main.1733adfd.js.map"
   },
   "entrypoints": [
     "static/css/main.c2b2427d.css",
-    "static/js/main.1313011c.js"
+    "static/js/main.1733adfd.js"
   ]
 }
