@@ -14,10 +14,10 @@ export const Home = () => {
             Hi, I'm Vineeth kumar
           </h2>
           <p className="text-gray-500">
-            a final-year BTech student at Kakatiya Institute of technology and
-            science warangal College, deeply passionate about the software
-            field, particularly in crafting innovative web applications using
-            technologies like React and CSS
+            i recently completed my BTech final year from Kakatiya Institute of
+            technology and science warangal College , deeply passionate about
+            the software field, particularly in crafting innovative web
+            applications using technologies like React and CSS
           </p>
           <div className=" w-40">
             <Link

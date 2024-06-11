@@ -1,6 +1,6 @@
 import React from "react";
 import chat from "../assets/portfolio/chat.png";
-import movies1 from "../assets/portfolio/movies1.jpg";
+import movies1 from "../assets/portfolio/avengers.png";
 import tic from "../assets/portfolio/tic.jpg";
 import face1 from "../assets/portfolio/face1.jpg";
 import robots1 from "../assets/portfolio/whatsapp-chat-analyser.png";
