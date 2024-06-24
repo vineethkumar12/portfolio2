@@ -5,7 +5,7 @@ import tic from "../assets/portfolio/tic.jpg";
 import face1 from "../assets/portfolio/face1.jpg";
 import robots1 from "../assets/portfolio/whatsapp-chat-analyser.png";
 import Parkandgo from "../assets/parkandgo.png";
-import Tilt from "react-tilt";
+import Tilt from "./Tilt";
 export const Portfolio = () => {
   const portfolio = [
     {
@@ -64,9 +64,9 @@ export const Portfolio = () => {
         <div className=" grid gap-8 px-12  mb-10 md:-mb-20  sm:px-0 md:grid-cols-3 sm:grid-cols-2">
           {portfolio.map((src, id) => {
             return (
-              <Tilt>
+              <Tilt key={id}>
                 <div
-                  key={id}
+                  data-aos="zoom-in"
                   className="shadow-md overflow-hidden shadow-gray-500 rounded-lg"
                 >
                   <a href={src.link1} target="new">

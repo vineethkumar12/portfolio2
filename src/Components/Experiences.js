@@ -5,7 +5,7 @@ import css from "../assets/css.png";
 import react from "../assets/react.png";
 import javascript from "../assets/javascript.png";
 import tailwind from "../assets/tailwind.png";
-import Tilt from "react-tilt";
+import Tilt from "./Tilt";
 import "./N.css";
 const experience = [
   { id: 1, nam: "React", src: react, st: "shadow-blue-500" },
@@ -35,6 +35,7 @@ export const Experiences = () => {
             {experience.map((src, i) => {
               return (
                 <div
+                  data-aos="zoom-in"
                   key={experience[i].id}
                   className={`  animate shadow-md ${experience[i].st} rounded-lg`}
                 >

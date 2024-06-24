@@ -14,19 +14,20 @@ export const About = () => {
         <div className=" font-bold border-b-4  w-20 border-gray-500 text-4xl mb-3 ml-3   md:ml-60">
           {" "}
         </div>
-
-        <p className=" text-gray-500  md:ml-60 text-1xl md:mt-20">
-          Hi... This is vineeth kumar , i am 23 years old, i am live in
-          warangal,telangana state
-        </p>
-        <br></br>
-        <p className="ml-2  text-gray-500 md:ml-60 md:mr-40 text-1xl">
-          I'm an ECE student at Kakatiya Institute of Technology, passionate
-          about web development. I have proficiency in C, Java, data structures,
-          SQL, JavaScript, HTML, CSS, and ReactJS. A quick learner and dedicated
-          to achieving excellence in technology, I'm excited to contribute
-          creative solutions across different tech domains
-        </p>
+        <div data-aos="fade-up">
+          <p className=" text-gray-500  md:ml-60 text-1xl md:mt-20">
+            Hi... This is vineeth kumar , i am 23 years old, i am live in
+            warangal,telangana state
+          </p>
+          <br></br>
+          <p className="ml-2  text-gray-500 md:ml-60 md:mr-40 text-1xl">
+            I'm an ECE student at Kakatiya Institute of Technology, passionate
+            about web development. I have proficiency in C, Java, data
+            structures, SQL, JavaScript, HTML, CSS, and ReactJS. A quick learner
+            and dedicated to achieving excellence in technology, I'm excited to
+            contribute creative solutions across different tech domains
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -7,14 +7,14 @@ export const Contact = () => {
       className="bg-gradient-to-b from-black to-gray-800 text-white-500   w-full text-white md:h-screen"
     >
       <div className="flex flex-col justify-center  h-full mx-auto  p-4 max-w-screen-lg">
-        <div className="">
+        <div data-aos="fade-right" className="">
           <p className="font-bold border-b-4   border-gray-500 w-32  text-4xl  text-yellow-500">
             {" "}
             Contact
           </p>
           <p className="py-6"> Submit the form below to get touch with me</p>
         </div>
-        <div>
+        <div data-aos="fade-left">
           <form
             action="https://getform.io/f/40851dd3-d75d-4723-96b6-01869d1c8d3e"
             method="POST"
