@@ -1,5 +1,6 @@
 import React from "react";
 import chat from "../assets/portfolio/chat.png";
+import stopwatch from "../assets/portfolio/stopwatch.jpg";
 import movies1 from "../assets/portfolio/avengers.png";
 import tic from "../assets/portfolio/tic.jpg";
 import face1 from "../assets/portfolio/face1.jpg";
@@ -40,10 +41,9 @@ export const Portfolio = () => {
     },
     {
       id: 6,
-      src: robots1,
-      link1:
-        "https://vineethkumar12-whatsapp-chat-analayzer-app-3sz1u3.streamlit.app/",
-      name: "Whatsapp-chat-sentiment analyser",
+      src: stopwatch,
+      link1: "https://vineethkumar12.github.io/stopwatch/",
+      name: "Stop Watch",
     },
   ];
 
