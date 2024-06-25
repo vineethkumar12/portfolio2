@@ -12,7 +12,7 @@ export const Portfolio = () => {
     {
       id: 1,
       src: Parkandgo,
-      link1: "https://parkngo.csre.in ",
+      link1: "https://parkngo.csre.in/#/signin ",
       name: "Park and GO",
     },
     {
