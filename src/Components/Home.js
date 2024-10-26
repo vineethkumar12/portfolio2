@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <div
       id="home"
-      className="w-full    h-screen bg-gradient-to-b   from-black to-gray-800 "
+      className="w-full     h-screen bg-gradient-to-b   from-black to-gray-800 "
     >
       <div className=" flex  max-w-screen-lg flex-col mx-auto h-full justify-center items-center  px-4 md:flex-row   ">
         <div className="text-white   mt-28  md:m-0">
@@ -22,7 +22,7 @@ export const Home = () => {
               make an impact.
             </h3>
           </div>
-          <div className="  flex cursor-pointer gap-10 -ml-9">
+          <div className="  flex cursor-pointer gap-10 ml-0 md:-ml-9">
             <Link
               to="Projects"
               smooth

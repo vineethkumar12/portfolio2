@@ -48,7 +48,7 @@ export const Contact = () => {
         </div>
 
         <div>
-          <ul className="flex  justify-end  gap-10 mt-10  flex-row">
+          <ul className="flex  md:justify-end  justify-center  gap-10 mt-10  flex-row">
             <li className=" hover:scale-125 transition-transform duration-200  ">
               {" "}
               <a
@@ -98,7 +98,9 @@ export const Contact = () => {
           </ul>
         </div>
         <div>
-          <h1 className="text-gray-400 -mt-2">Copyright:©vineethkumar 2024</h1>
+          <h1 className="text-gray-400 -mt-2  hidden md:block">
+            Copyright:©vineethkumar 2024
+          </h1>
         </div>
       </div>
     </div>

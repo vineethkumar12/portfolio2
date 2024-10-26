@@ -41,7 +41,7 @@ const experience = [
     src: github,
     st: "shadow-blue-500",
     credential: "",
-    issued: "Issued jan 2023",
+    issued: "Issued jan 2023 ",
   },
 ];
 
@@ -58,7 +58,7 @@ export const Exp = () => {
           </p>
         </div>
 
-        <div className=" grid     text-center py-8  mb-10 md:-mb-20 gap-8 px-12 sm:px-0 md:grid-cols-3 sm:grid-cols-2">
+        <div className=" grid     text-center py-8  mb-10 md:-mb-20 gap-8 px-8 sm:px-0 md:grid-cols-3 sm:grid-cols-2">
           {experience.map((src, i) => {
             return (
               <div
@@ -81,7 +81,7 @@ export const Exp = () => {
                 <div className="mb-4 ml-14 hover:scale-105 transition-transform duration-200">
                   <a
                     href={experience[i].credential}
-                    className=" p-2  border-2 border-gray-500 rounded-md"
+                    className=" p-2  border-2 border-gray-500 rounded-md text-xs   md:text-sm"
                     target="new"
                   >
                     Show Credential

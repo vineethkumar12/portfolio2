@@ -113,13 +113,17 @@
   .about {
     left: 0px; /* Apply left positioning */
     top: 45px;
-    position: absolute;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+
     /* Use absolute positioning if needed */
-    width: 480px;
+    width: 400px;
     height: 300px;
   }
   .giphy-embed {
-    width: 480px;
+    width: 400px;
     height: 400px;
   }
   .about-container {
