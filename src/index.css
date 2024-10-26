@@ -114,16 +114,16 @@
     left: 0px; /* Apply left positioning */
     top: 45px;
 
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 5px;
     padding-top: 10px;
 
     /* Use absolute positioning if needed */
-    width: 400px;
+    width: 380px;
     height: 300px;
   }
   .giphy-embed {
-    width: 400px;
+    width: 380px;
     height: 400px;
   }
   .about-container {

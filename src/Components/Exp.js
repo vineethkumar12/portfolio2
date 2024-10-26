@@ -81,7 +81,7 @@ export const Exp = () => {
                 <div className="mb-4 ml-14 hover:scale-105 transition-transform duration-200">
                   <a
                     href={experience[i].credential}
-                    className=" p-2  border-2 border-gray-500 rounded-md text-xs   md:text-sm"
+                    className=" p-2  border-2 border-gray-500 rounded-md text-xs  mt-2 mt:mt-0  md:text-sm"
                     target="new"
                   >
                     Show Credential

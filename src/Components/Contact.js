@@ -15,7 +15,7 @@ export const Contact = () => {
           </p>
           <p className="py-6"> Submit the form below to get touch with me</p>
         </div>
-        <div data-aos="fade-left">
+        <div data-aos="flip-up">
           <form
             action="https://getform.io/f/40851dd3-d75d-4723-96b6-01869d1c8d3e"
             method="POST"
