@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb9c3b71.css",
-    "main.js": "/static/js/main.38eb0e5a.js",
+    "main.css": "/static/css/main.3c51d7c9.css",
+    "main.js": "/static/js/main.3c280bcc.js",
     "static/media/parkandgo.png": "/static/media/parkandgo.7940a3370ff9f97478ef.png",
     "static/media/avengers.png": "/static/media/avengers.eb091be91f743368ea65.png",
     "static/media/chat.png": "/static/media/chat.d5be0080382b89de4a99.png",
     "static/media/vineeth3.png": "/static/media/vineeth3.649e07f7e7101787b7ff.png",
+    "static/media/VineethKumar_Adepu-Resume.pdf": "/static/media/VineethKumar_Adepu-Resume.8987a7cfe0d70c37054c.pdf",
     "static/media/whatsapp-chat-analyser.png": "/static/media/whatsapp-chat-analyser.c8c9b2cbf3a18715416c.png",
     "static/media/face1.jpg": "/static/media/face1.13346019e6c5185597f1.jpg",
     "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
@@ -15,13 +16,14 @@
     "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
     "static/media/tailwind.png": "/static/media/tailwind.e47ac876b8d4d0bba47a.png",
     "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/nptel-logo.png": "/static/media/nptel-logo.ea25242275a88a2965a0.png",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
-    "main.bb9c3b71.css.map": "/static/css/main.bb9c3b71.css.map",
-    "main.38eb0e5a.js.map": "/static/js/main.38eb0e5a.js.map"
+    "main.3c51d7c9.css.map": "/static/css/main.3c51d7c9.css.map",
+    "main.3c280bcc.js.map": "/static/js/main.3c280bcc.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb9c3b71.css",
-    "static/js/main.38eb0e5a.js"
+    "static/css/main.3c51d7c9.css",
+    "static/js/main.3c280bcc.js"
   ]
 }
