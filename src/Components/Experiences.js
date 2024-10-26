@@ -19,10 +19,10 @@ const experience = [
 export const Experiences = () => {
   return (
     <div
-      id="Skills"
-      className="bg-gradient-to-b from-gray-800 to-black text-white-500 text-white  w-full md:h-screen"
+      id="skills"
+      className="bg-gradient-to-b from-black to-gray-800  text-white-500 text-white  w-full md:h-screen"
     >
-      <div className="flex flex-col justify-center  w-full h-full mx-auto  p-4 max-w-screen-lg">
+      <div className="flex flex-col justify-center    h-full mx-auto  p-4 max-w-screen-lg">
         <div className="mt-5">
           <p className="font-bold border-b-4   border-gray-500  text-4xl  text-yellow-500   w-24">
             Skills
@@ -42,7 +42,7 @@ export const Experiences = () => {
                   <img
                     src={experience[i].src}
                     alt=""
-                    className="hover:scale-125 w-20 mx-auto h-24 mt-3 rounded-md  cursor-pointer duration-200"
+                    className="hover:scale-125 w-20 mx-auto h-24 mt-3 rounded-md  duration-200"
                   />
                   <p className="mt-4">{experience[i].nam}</p>
                 </div>

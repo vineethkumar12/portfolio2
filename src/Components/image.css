@@ -1,3 +1,5 @@
 .image {
   border-radius: 5% 25%;
+  border-top: 8px solid rgba(255, 255, 255, 0.5);
+  border-right: 5px solid rgba(255, 255, 255, 0.5);
 }

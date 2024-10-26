@@ -10,6 +10,7 @@ import { Contact } from "./Components/Contact";
 import { Helmet } from "react-helmet";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Exp } from "./Components/Exp";
 
 function App() {
   // const a="grgjkhjgkkgdkhjtgkjrigjjjjjjjjjjjjjjj"
@@ -33,6 +34,7 @@ function App() {
       <Home />
       <About />
       <Portfolio />
+      <Exp />
       <Experiences />
       <Contact />
       <Sociallinks />

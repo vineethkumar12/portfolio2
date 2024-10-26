@@ -1,12 +1,13 @@
 import React from "react";
+import { Sociallinks } from "./Sociallinks";
 
 export const Contact = () => {
   return (
     <div
       id="contact"
-      className="bg-gradient-to-b from-black to-gray-800 text-white-500   w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-gray-800 to-black text-white-500   w-full text-white md:h-screen"
     >
-      <div className="flex flex-col justify-center  h-full mx-auto  p-4 max-w-screen-lg">
+      <div className="flex flex-col justify-center  h-full  mx-auto  p-4 max-w-screen-lg">
         <div data-aos="fade-right" className="">
           <p className="font-bold border-b-4   border-gray-500 w-32  text-4xl  text-yellow-500">
             {" "}
@@ -44,6 +45,60 @@ export const Contact = () => {
               </button>
             </div>
           </form>
+        </div>
+
+        <div>
+          <ul className="flex  justify-end  gap-10 mt-10  flex-row">
+            <li className=" hover:scale-125 transition-transform duration-200  ">
+              {" "}
+              <a
+                href="https://github.com/vineethkumar12"
+                rel="noreferrer"
+                target="_blank"
+                className="   hover:text-green-500   text-yellow-500"
+              >
+                {" "}
+                <i className="fa-brands fa-github  fa-lg"></i>
+              </a>
+            </li>
+
+            <li className=" rounded-md hover:scale-125 transition-transform duration-200   ">
+              {" "}
+              <a
+                href="https://www.linkedin.com/in/vineeth-kumar-6358a2231/"
+                rel="noreferrer"
+                target="_blank"
+                className="  hover:text-green-500  text-yellow-500"
+              >
+                <i className="fa-brands fa-linkedin-in fa-lg"></i>{" "}
+              </a>{" "}
+            </li>
+            <li className=" hover:scale-125 transition-transform duration-200  rounded-md  duration-300    ">
+              {" "}
+              <a
+                href="https://www.facebook.com/adepuvineeth.vini"
+                rel="noreferrer"
+                target="_blank"
+                className=" hover:text-green-500  text-yellow-500"
+              >
+                <i className="fa-brands fa-facebook fa-lg"></i>
+              </a>{" "}
+            </li>
+            <li className="hover:scale-125 transition-transform duration-200   rounded-md  duration-300 ">
+              {" "}
+              <a
+                href="mailto:adepuvineethvinni@gmail.com"
+                rel="noreferrer"
+                target="_blank"
+                className="  hover:text-green-500   text-yellow-500"
+              >
+                <i className="fa-solid fa-envelope fa-lg"></i>
+              </a>{" "}
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h1 className="text-gray-400 -mt-2">Copyright:©vineethkumar 2024</h1>
         </div>
       </div>
     </div>

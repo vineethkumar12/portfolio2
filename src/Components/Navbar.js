@@ -2,11 +2,32 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./N.css";
 import { Link } from "react-scroll";
 const Navbar = () => {
   const [nav, setnav] = useState(false);
+
+  const [visible, setVisible] = useState(true);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+
+  const handleScroll = () => {
+    const currentScrollTop =
+      window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScrollTop > lastScrollTop) {
+      setVisible(false); // Scrolling down
+    } else {
+      setVisible(true); // Scrolling up
+    }
+    setLastScrollTop(currentScrollTop);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollTop]);
+
   const links = [
     {
       id: 1,
@@ -22,17 +43,21 @@ const Navbar = () => {
     },
     {
       id: 4,
-      link: "Skills",
+      link: "Experience",
     },
     {
       id: 5,
+      link: "skills",
+    },
+    {
+      id: 6,
       link: "contact",
     },
   ];
 
   return (
     <div>
-      <div className="flex  fixed  justify-between items-center  z-10 w-full h-20 px-4">
+      <div className="flex  fixed  justify-between items-center  z-10 w-full h-20 px-4 ">
         <div className="flex">
           <div className="   animate-pulse  text-5xl hover:animate-bounce">
             {" "}
@@ -44,7 +69,11 @@ const Navbar = () => {
         </div>
 
         <div>
-          <ul className="hidden md:flex  space-x-9   mr-16 ">
+          <ul
+            className={`hidden  ${
+              visible ? "translate-y-0" : "-translate-y-16"
+            } md:flex  nav  space-x-9   mr-16 `}
+          >
             {links.map((link, i) => {
               return (
                 <li
@@ -75,7 +104,7 @@ const Navbar = () => {
         </div>
 
         {nav && (
-          <ul className="flex  md:hidden   text-yellow-500 j flex-col absolute  justify-center  h-96 w-56 right-0 mb-3 rounded-lg items-center ml-9    bg-gradient-to-b from-gray-800 via-black  to-gray-800 text-white-500   ">
+          <ul className="flex  md:hidden social4    text-yellow-500 j flex-col absolute  justify-center  h-80 right-0   mb-8 rounded-lg items-center ml-9  gap-4 w-24   bg-gradient-to-b from-gray-800 via-black  to-gray-800 text-white-500   ">
             {links.map((link, i) => {
               return (
                 <li

@@ -4,7 +4,7 @@ export const Sociallinks = () => {
   return (
     <div className=" hidden md:flex flex-col absolute    md:top-[35%]">
       <ul>
-        <li className="flex ml-[-100px] hover:ml-[-5px] items-center h-10 rounded-md  duration-300 w-40  px-4   hover:bg-gradient-to-r from-indigo-500 via-pink-600 to-cyan-500">
+        <li className="flex ml-[-100px] hover:ml-[-5px] items-center h-10 rounded-md  duration-300 w-40  px-6 social4  ">
           {" "}
           <a
             href="https://github.com/vineethkumar12"
@@ -13,11 +13,12 @@ export const Sociallinks = () => {
             className=" flex justify-between items-center w-full  text-yellow-500"
           >
             {" "}
-            Github<i className="fa-brands fa-github  fa-lg"></i>
+            <span className="gradient-text"> Github</span>{" "}
+            <i className="fa-brands fa-github  fa-lg"></i>
           </a>
         </li>
 
-        <li className="flex ml-[-100px] hover:ml-[-5px] items-center h-10 rounded-md  duration-300 w-40  px-4 hover:bg-gradient-to-r from-sky-500 via-orange-600 to-indigo-500">
+        <li className="flex ml-[-100px] hover:ml-[-5px] items-center h-10 rounded-md  duration-300 w-40  px-6 social4">
           {" "}
           <a
             href="https://www.linkedin.com/in/vineeth-kumar-6358a2231/"
@@ -25,10 +26,11 @@ export const Sociallinks = () => {
             target="_blank"
             className="flex justify-between items-center w-full text-yellow-500"
           >
-            Linkedin<i className="fa-brands fa-linkedin-in fa-lg"></i>{" "}
+            <span className="gradient-text">Linkedin</span>
+            <i className="fa-brands fa-linkedin-in fa-lg"></i>{" "}
           </a>{" "}
         </li>
-        <li className="flex ml-[-100px] hover:ml-[-5px] items-center h-10 rounded-md  duration-300 w-40  px-4 hover:bg-gradient-to-r from-green-500 via-gray-600 to-cyan-500">
+        <li className="flex ml-[-100px] hover:ml-[-5px] items-center h-10 rounded-md  duration-300 w-40  px-6 social4">
           {" "}
           <a
             href="https://www.facebook.com/adepuvineeth.vini"
@@ -36,10 +38,11 @@ export const Sociallinks = () => {
             target="_blank"
             className="flex justify-between items-center w-full text-yellow-500"
           >
-            Facebook<i className="fa-brands fa-facebook fa-lg"></i>
+            <span className="gradient-text"> Facebook</span>
+            <i className="fa-brands fa-facebook fa-lg"></i>
           </a>{" "}
         </li>
-        <li className="flex ml-[-100px] hover:ml-[-5px] items-center h-10 rounded-md  duration-300 w-40  px-4  hover:bg-gradient-to-r from-red-500 via-blue-600 to-pink-500">
+        <li className="flex ml-[-100px] hover:ml-[-5px] items-center h-10 rounded-md  duration-300 w-40 social4 px-6">
           {" "}
           <a
             href="mailto:adepuvineethvinni@gmail.com"
@@ -47,7 +50,8 @@ export const Sociallinks = () => {
             target="_blank"
             className="flex justify-between  items-center w-full text-yellow-500"
           >
-            Mail<i className="fa-solid fa-envelope fa-lg"></i>
+            <span className="gradient-text">Mail</span>
+            <i className="fa-solid fa-envelope fa-lg"></i>
           </a>{" "}
         </li>
       </ul>
