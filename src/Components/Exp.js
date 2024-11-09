@@ -5,6 +5,8 @@ import github from "../assets/linkedin.png";
 import react from "../assets/pantech.jpg";
 import java from "../assets/nptel-logo.png";
 import webdeveloper from "../assets/udemy.png";
+import wipro from "../assets/wipro3.png";
+import internshala from "../assets/intern.png";
 import Tilt from "./Tilt";
 import "./N.css";
 const experience = [
@@ -12,7 +14,7 @@ const experience = [
     id: 1,
     nam: "React Internship by pantech",
     src: react,
-    st: "shadow-blue-500",
+    st: "shadow-customRed",
     credential:
       "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22CS92S5372001010068734",
     issued: "Issued jun 2023 . Expired jul 2023",
@@ -30,7 +32,7 @@ const experience = [
     id: 3,
     nam: "web developer cer.. by udemy",
     src: webdeveloper,
-    st: "shadow-sky-500",
+    st: "shadow-brinjal",
     credential:
       "https://www.udemy.com/certificate/UC-c117408f-20aa-42b7-9127-e3c427c025c2/",
     issued: "Issued Apr 2022 . Expired jan 2023",
@@ -42,6 +44,23 @@ const experience = [
     st: "shadow-blue-500",
     credential: "",
     issued: "Issued jan 2023 ",
+  },
+  {
+    id: 5,
+    nam: "java J2ee cer... by wipro talent next",
+    src: wipro,
+    st: "shadow-pink-300",
+    credential: "https://cert.diceid.com/csr/cid/Z8S8GB?verify=true",
+    issued: "Issued oct 2023 ",
+  },
+  {
+    id: 6,
+    nam: "Andriod app developement by internshala",
+    src: internshala,
+    st: "shadow-blue-500",
+    credential:
+      "https://trainings.internshala.com/verify-certificate/?certificate_number=C91CF2A6-90D3-14A2-91AD-46DDCEE1BE74",
+    issued: "Issued mar 2022 ",
   },
 ];
 
@@ -86,7 +105,6 @@ export const Exp = () => {
                   >
                     Show Credential
                   </a>
-                  <p></p>
                 </div>
               </div>
             );

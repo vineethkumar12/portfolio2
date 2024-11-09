@@ -5,6 +5,7 @@ import css from "../assets/css.png";
 import react from "../assets/react.png";
 import javascript from "../assets/javascript.png";
 import tailwind from "../assets/tailwind.png";
+
 import Tilt from "./Tilt";
 import "./N.css";
 const experience = [
