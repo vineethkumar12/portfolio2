@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e3bc11de.css",
-    "main.js": "/static/js/main.cd432afb.js",
+    "main.css": "/static/css/main.db436b4a.css",
+    "main.js": "/static/js/main.d7a48b7b.js",
     "static/media/parkandgo.png": "/static/media/parkandgo.7940a3370ff9f97478ef.png",
     "static/media/avengers.png": "/static/media/avengers.eb091be91f743368ea65.png",
     "static/media/chat.png": "/static/media/chat.d5be0080382b89de4a99.png",
@@ -19,11 +19,11 @@
     "static/media/nptel-logo.png": "/static/media/nptel-logo.ea25242275a88a2965a0.png",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
-    "main.e3bc11de.css.map": "/static/css/main.e3bc11de.css.map",
-    "main.cd432afb.js.map": "/static/js/main.cd432afb.js.map"
+    "main.db436b4a.css.map": "/static/css/main.db436b4a.css.map",
+    "main.d7a48b7b.js.map": "/static/js/main.d7a48b7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3bc11de.css",
-    "static/js/main.cd432afb.js"
+    "static/css/main.db436b4a.css",
+    "static/js/main.d7a48b7b.js"
   ]
 }
