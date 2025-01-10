@@ -25,7 +25,11 @@ function App() {
     <div className="App">
       <Helmet>
         <title>About Vineeth Kumar</title>
-        <meta name="description" content="Learn more about Vineeth Kumar." />
+        <meta
+          name="description"
+          content="Hi, I’m Vineeth Kumar. Explore my portfolio to see my projects and passion for creating websites and innovative solutions!"
+        />
+
         <meta name="keywords" content="vineeth, kumar, about" />
       </Helmet>
 
