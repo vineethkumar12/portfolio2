@@ -57,7 +57,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="flex  fixed  justify-between items-center   z-10 w-full h-20 px-4 ">
+      <div className="flex  fixed  z-20 justify-between items-center    w-full h-20 px-4 ">
         <div className="flex">
           <div className="   animate-pulse  text-5xl hover:animate-bounce">
             {" "}
@@ -78,7 +78,7 @@ const Navbar = () => {
               return (
                 <li
                   key={link.id}
-                  className="Link text-yellow-500 visited:text-red-700 hover:underline capitalize flex justify-between cursor-pointer  hover:scale-125 duration-200 font-medium "
+                  className="Link gradient-text text-yellow-500 visited:text-red-700  capitalize flex justify-between cursor-pointer  hover:scale-125 duration-200 font-medium "
                 >
                   <Link
                     to={links[i].link}

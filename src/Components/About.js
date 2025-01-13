@@ -23,18 +23,18 @@ export const About = () => {
               ></iframe>
             </div>
             <div data-aos="zoom-in" className="about">
-              <p className=" text-white   ">
-                Hi... This is vineeth kumar , i am 23 years old, i am live in
-                warangal,telangana state
-              </p>
-              <br></br>
               <p className="ml-2    text-white">
-                I'm an ECE student at Kakatiya Institute of Technology,
-                passionate about web development. I have proficiency in C, Java,
-                data structures, SQL, JavaScript, HTML, CSS, and ReactJS. A
-                quick learner and dedicated to achieving excellence in
-                technology, I'm excited to contribute creative solutions across
-                different tech domains
+                Hi, I’m <strong>Vineeth Kumar</strong>. I’m passionate about
+                technology, especially web development and coding.<br></br> I
+                have experience with C, Java, JavaScript, React.js, and Python.{" "}
+                <br></br>I run a YouTube channel called{" "}
+                <strong>Vineeth’s Tech Fusion</strong>, where I share coding
+                tutorials, tech reviews, and industry insights. I also enjoy
+                creating websites and staying updated with the latest tech
+                trends.<br></br>I recently started working as an{" "}
+                <strong> SQL Developer</strong> at CHATRAPATHI GREENTECH
+                SOFTWARES PVT. LTD., which is a great step in my career. In my
+                free time, I like watching YouTube
               </p>
             </div>
           </div>

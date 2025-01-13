@@ -48,7 +48,7 @@ export const Contact = () => {
         </div>
 
         <div>
-          <ul className="flex  md:justify-end  justify-center  gap-10 mt-10  flex-row">
+          <ul className="flex   md:justify-end  justify-center  gap-10 mt-10  flex-row">
             <li className=" hover:scale-125 transition-transform duration-200  ">
               {" "}
               <a
@@ -73,6 +73,18 @@ export const Contact = () => {
                 <i className="fa-brands fa-linkedin-in fa-lg"></i>{" "}
               </a>{" "}
             </li>
+            <li className=" rounded-md hover:scale-125 transition-transform duration-200   ">
+              {" "}
+              <a
+                href="https://www.youtube.com/@VineethTechFusion"
+                rel="noreferrer"
+                target="_blank"
+                className=" hover:text-green-500  text-yellow-500"
+              >
+                <i className="fa-brands fa-youtube fa-lg"></i>
+              </a>{" "}
+            </li>
+
             <li className=" hover:scale-125 transition-transform duration-200  rounded-md  duration-300    ">
               {" "}
               <a

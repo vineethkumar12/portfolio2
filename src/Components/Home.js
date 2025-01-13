@@ -7,10 +7,10 @@ export const Home = () => {
   return (
     <div
       id="home"
-      className="w-full     h-screen bg-gradient-to-b   from-black to-gray-800 "
+      className="w-full      h-screen bg-gradient-to-b   from-black to-gray-800 "
     >
-      <div className=" flex  max-w-screen-lg flex-col mx-auto h-full justify-center items-center  px-4 md:flex-row   ">
-        <div className="text-white   mt-28  md:m-0">
+      <div className=" i flex  max-w-screen-lg flex-col mx-auto h-full justify-center items-center  px-4 md:flex-row   ">
+        <div className="text-white image1  mt-28  md:m-0">
           <div className="relative md:right-10 right-0">
             <div>
               <h2 className="text-6xl mb-3    text-yellow-500  font-light font-a">
@@ -42,10 +42,10 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <div className="   ">
+        <div className="z-10   ">
           <img
             src={h}
-            className=" image mt-6  shadow-xl  shadow-yellow-500 w-60 md:rounded-md  md:h-auto md:w-auto "
+            className=" image mt-6 pl-1  pb-3 w-60 md:rounded-md  md:h-auto md:w-auto "
             alt="vineeth"
           />
         </div>

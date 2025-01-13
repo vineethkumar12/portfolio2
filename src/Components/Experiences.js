@@ -21,7 +21,7 @@ export const Experiences = () => {
   return (
     <div
       id="skills"
-      className="bg-gradient-to-b from-black to-gray-800  text-white-500 text-white  w-full md:h-screen"
+      className=" z-10 bg-gradient-to-b from-black to-gray-800  text-white-500 text-white  w-full md:h-screen"
     >
       <div className="flex flex-col justify-center    h-full mx-auto  p-4 max-w-screen-lg">
         <div className="mt-5">

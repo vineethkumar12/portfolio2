@@ -11,6 +11,7 @@ import { Helmet } from "react-helmet";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Exp } from "./Components/Exp";
+import Particle from "./Particle";
 
 function App() {
   // const a="grgjkhjgkkgdkhjtgkjrigjjjjjjjjjjjjjjj"
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div className="App">
+      <Particle />
       <Helmet>
         <title>About Vineeth Kumar</title>
         <meta

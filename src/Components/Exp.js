@@ -16,7 +16,7 @@ const experience = [
     src: react,
     st: "shadow-customRed",
     credential:
-      "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL22CS92S5372001010068734",
+      "https://drive.google.com/file/d/1jNuK5bdZfhCoAWk58CfNmtnGB48r-LBs/view?usp=drive_link",
     issued: "Issued jun 2023 . Expired jul 2023",
   },
   {

@@ -2,7 +2,7 @@ import React from "react";
 import chat from "../assets/portfolio/chat.png";
 import stopwatch from "../assets/portfolio/stopwatch.jpg";
 import movies1 from "../assets/portfolio/avengers.png";
-import tic from "../assets/portfolio/tic.jpg";
+import tic from "../assets/portfolio/tic-toc.png";
 import face1 from "../assets/portfolio/face1.jpg";
 import robots1 from "../assets/portfolio/whatsapp-chat-analyser.png";
 import Parkandgo from "../assets/parkandgo.png";

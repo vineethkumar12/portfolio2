@@ -95,7 +95,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(18px);
   border: 4px solid rgba(255, 255, 255, 0.5);
   padding-left: 60px;
   padding-right: 60px;
@@ -113,7 +113,7 @@
   .about {
     left: 0px; /* Apply left positioning */
     top: 45px;
-
+    font-size: small;
     padding-left: 10px;
     padding-right: 5px;
     padding-top: 10px;

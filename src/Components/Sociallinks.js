@@ -33,12 +33,24 @@ export const Sociallinks = () => {
         <li className="flex ml-[-100px] hover:ml-[-5px] items-center h-10 rounded-md  duration-300 w-40  px-6 social4">
           {" "}
           <a
+            href="https://www.youtube.com/@VineethTechFusion"
+            rel="noreferrer"
+            target="_blank"
+            className="flex justify-between items-center w-full text-yellow-500"
+          >
+            <span className="gradient-text"> YouTube</span>
+            <i className="fa-brands fa-youtube fa-lg"></i>
+          </a>{" "}
+        </li>
+        <li className="flex ml-[-100px] hover:ml-[-5px] items-center h-10 rounded-md  duration-300 w-40 social4 px-6">
+          {" "}
+          <a
             href="https://www.facebook.com/adepuvineeth.vini"
             rel="noreferrer"
             target="_blank"
             className="flex justify-between items-center w-full text-yellow-500"
           >
-            <span className="gradient-text"> Facebook</span>
+            <span className="gradient-text">Facebook</span>
             <i className="fa-brands fa-facebook fa-lg"></i>
           </a>{" "}
         </li>
