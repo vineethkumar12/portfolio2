@@ -25,16 +25,16 @@ export const About = () => {
             <div data-aos="zoom-in" className="about">
               <p className="ml-2    text-white">
                 Hi, I’m <strong>Vineeth Kumar</strong>. I’m passionate about
-                technology, especially web development and coding.<br></br> I
-                have experience with C, Java, JavaScript, React.js, and Python.{" "}
-                <br></br>I run a YouTube channel called{" "}
+                technology, particularly web development and coding.
+                <br />I have experience in{" "}
+                <strong> Java, JavaScript, React.js,Sql and Python</strong>.
+                <br />I also run a YouTube channel called{" "}
                 <strong>Vineeth’s Tech Fusion</strong>, where I share coding
-                tutorials, tech reviews, and industry insights. I also enjoy
-                creating websites and staying updated with the latest tech
-                trends.<br></br>I recently started working as an{" "}
-                <strong> SQL Developer</strong> at CHATRAPATHI GREENTECH
-                SOFTWARES PVT. LTD., which is a great step in my career. In my
-                free time, I like watching YouTube
+                tutorials, tech reviews, and industry insights.
+                <br />
+                Additionally, I’ve successfully developed{" "}
+                <strong>three projects for my clients</strong> and enjoy staying
+                updated with the latest tech trends.
               </p>
             </div>
           </div>
