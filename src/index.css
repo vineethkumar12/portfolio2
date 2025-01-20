@@ -79,7 +79,8 @@
 
 .about-container {
   position: relative;
-
+  width: 100%;
+  margin: 0% auto;
   top: 40px;
   border: 3px solid white;
   border-radius: 1rem 4rem 1rem 4rem;
@@ -87,9 +88,9 @@
 }
 .about {
   position: absolute;
-  width: 710px;
+  width: 80%;
   height: 400px;
-  left: 120px;
+  margin-left: 100px;
   top: 0px;
   display: flex;
   justify-content: center;
@@ -104,30 +105,28 @@
   border-radius: 1rem;
   overflow: hidden;
 }
-
 .giphy-embed {
-  width: 950px;
+  margin-left: 100px;
+  width: 80%;
   height: 400px;
+  border-radius: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
   .about {
     left: 0px; /* Apply left positioning */
-    top: 45px;
+
     font-size: small;
     padding-left: 10px;
     padding-right: 5px;
     padding-top: 10px;
 
     /* Use absolute positioning if needed */
-    width: 380px;
-    height: 300px;
   }
-  .giphy-embed {
-    width: 380px;
-    height: 400px;
-  }
+
   .about-container {
-    top: 20px;
+    position: relative;
+    left: -65px;
+    top: 40px;
     border: none;
     box-shadow: none;
   }

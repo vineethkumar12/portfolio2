@@ -6,5 +6,5 @@
   border-bottom: 8px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   box-shadow: inset 2px 10px 20px rgba(243, 235, 7, 0.5);
-  filter: contrast(2.5);
+  filter: contrast(1.1);
 }

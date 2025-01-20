@@ -15,13 +15,13 @@ export const About = () => {
         <div className="  flex flex-col  justify-center items-center ">
           <div className="about-container">
             <div className="giphy">
-              <iframe
-                src="https://giphy.com/embed/DjQZeqf3HqAQBqu45D"
-                className="giphy-embed pointer-events-none"
-                title="gm"
-                allowFullScreen
-              ></iframe>
+              <img
+                src="https://media.giphy.com/media/DjQZeqf3HqAQBqu45D/giphy.gif"
+                alt="gm"
+                className="giphy-embed"
+              />
             </div>
+
             <div data-aos="zoom-in" className="about">
               <p className="ml-2    text-white">
                 Hi, I’m <strong>Vineeth Kumar</strong>. I’m passionate about
