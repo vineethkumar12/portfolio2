@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e5a3e0ec.css",
-    "main.js": "/static/js/main.ba523ac5.js",
+    "main.css": "/static/css/main.7bb72b77.css",
+    "main.js": "/static/js/main.8c470d1d.js",
+    "static/media/led.mp4": "/static/media/led.0f00a50f1dd3e24898c6.mp4",
     "static/media/parkandgo.png": "/static/media/parkandgo.7940a3370ff9f97478ef.png",
     "static/media/avengers.png": "/static/media/avengers.eb091be91f743368ea65.png",
+    "static/media/patiot.png": "/static/media/patiot.a11f0a9e52d23f6f6bdc.png",
     "static/media/chat.png": "/static/media/chat.d5be0080382b89de4a99.png",
-    "static/media/vineeth3.png": "/static/media/vineeth3.649e07f7e7101787b7ff.png",
     "static/media/VineethKumar_Adepu-Resume.pdf": "/static/media/VineethKumar_Adepu-Resume.8987a7cfe0d70c37054c.pdf",
-    "static/media/whatsapp-chat-analyser.png": "/static/media/whatsapp-chat-analyser.c8c9b2cbf3a18715416c.png",
+    "static/media/vineeth-2.png": "/static/media/vineeth-2.24c0150b6ef1caae0e47.png",
     "static/media/face1.jpg": "/static/media/face1.13346019e6c5185597f1.jpg",
+    "static/media/websocket-1.png": "/static/media/websocket-1.7b8c03e6a94db3d646e2.png",
     "static/media/tic-toc.png": "/static/media/tic-toc.694791d1c779b4aad961.png",
     "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/stopwatch.jpg": "/static/media/stopwatch.8df59625ddc8be390f4b.jpg",
@@ -19,11 +21,11 @@
     "static/media/nptel-logo.png": "/static/media/nptel-logo.ea25242275a88a2965a0.png",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
-    "main.e5a3e0ec.css.map": "/static/css/main.e5a3e0ec.css.map",
-    "main.ba523ac5.js.map": "/static/js/main.ba523ac5.js.map"
+    "main.7bb72b77.css.map": "/static/css/main.7bb72b77.css.map",
+    "main.8c470d1d.js.map": "/static/js/main.8c470d1d.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5a3e0ec.css",
-    "static/js/main.ba523ac5.js"
+    "static/css/main.7bb72b77.css",
+    "static/js/main.8c470d1d.js"
   ]
 }
