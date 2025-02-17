@@ -1,53 +1,60 @@
 import React from "react";
-import h from "../assets/vineeth3.png";
 import resume from "../assets/VineethKumar_Adepu-Resume.pdf";
-import "./image.css";
 import { Link } from "react-scroll";
+import { FaArrowRight, FaDownload } from "react-icons/fa"; // Icons
+import { motion } from "framer-motion"; // For animations
+
 export const Home = () => {
+  // Animation variants
+
   return (
     <div
       id="home"
-      className="w-full      h-screen bg-gradient-to-b   from-black to-gray-800 "
+      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 flex justify-center items-center"
     >
-      <div className=" i flex  max-w-screen-lg flex-col mx-auto h-full justify-center items-center  px-4 md:flex-row   ">
-        <div className="text-white image1  mt-28  md:m-0">
-          <div className="relative md:right-10 right-0">
-            <div>
-              <h2 className="text-6xl mb-3    text-yellow-500  font-light font-a">
-                Hi, I'm Vineeth kumar
-              </h2>
-            </div>
-            <h3 className=" gradient-text text-3xl font-bold  text-left">
-              Passionate about real-time projects that bring ideas to life and
-              make an impact.
-            </h3>
-          </div>
-          <div className="  flex cursor-pointer gap-10 ml-0 md:-ml-9">
-            <Link
-              to="Projects"
-              smooth
-              duration={500}
-              className="  group bg-gradient-to-r  from-indigo-500 w-40 via-yellow-600 to-cyan-500 flex mt-5 justify-center py-1 px-2  items-center rounded-md    "
-            >
-              projects
-              <span className=" group-hover:rotate-90 duration-300">
-                <i className="fa-solid   fa-arrow-right  text-black ml-2 mr-2"></i>
-              </span>
-            </Link>
+      <div
+        initial="hidden"
+        animate="visible"
+        className="flex flex-col gap-y-6 items-center text-center text-white"
+      >
+        {/* Welcome Text */}
+        <h3 className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+          Welcome to My Portfolio
+        </h3>
 
-            <div className="resume">
-              <a href={resume} download="Vineeth_Kumar_Resume">
-                My Resume
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="z-10   ">
-          <img
-            src={h}
-            className=" image mt-6 pl-1  pb-3 w-60 md:rounded-md  md:h-auto md:w-auto "
-            alt="vineeth"
-          />
+        {/* Name */}
+        <h1 className="text-6xl font-bold text-yellow-500">
+          I'm Vineeth Kumar
+        </h1>
+
+        {/* Tagline */}
+        <h2 className="text-xl font-medium text-gray-300 max-w-2xl">
+          Passionate about real-time projects that bring ideas to life and make
+          an impact.
+        </h2>
+
+        {/* Buttons */}
+        <div className="flex gap-6 mt-6">
+          {/* Projects Button */}
+          <Link
+            to="projects"
+            smooth
+            duration={500}
+            className="group  hover:cursor-pointer flex items-center px-2 py-3 md:px-6 rounded-lg bg-yellow-500 text-black font-semibold hover:bg-yellow-600 transition-colors"
+          >
+            View Projects
+            <FaArrowRight className="ml-2 group-hover:translate-x-1 transition-transform group-hover:rotate-90 " />
+          </Link>
+
+          {/* Resume Button */}
+          <a
+            href={resume}
+            download="Vineeth_Kumar_Resume"
+            className="flex items-center px-2 py-3 md:px-6 rounded-lg border-2 border-yellow-500 text-yellow-500 font-semibold hover:bg-yellow-500 hover:text-black transition-colors"
+          >
+            Download Resume
+            <FaDownload className="ml-2" />
+          </a>
         </div>
       </div>
     </div>

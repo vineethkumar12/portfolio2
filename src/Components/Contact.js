@@ -1,118 +1,140 @@
 import React from "react";
-import { Sociallinks } from "./Sociallinks";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaYoutube,
+  FaFacebook,
+  FaEnvelope,
+} from "react-icons/fa"; // Icons
 
 export const Contact = () => {
   return (
     <div
       id="contact"
-      className="bg-gradient-to-b from-gray-800 to-black text-white-500   w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-black to-gray-800 text-white w-full py-16"
     >
-      <div className="flex flex-col justify-center  h-full  mx-auto  p-4 max-w-screen-lg">
-        <div data-aos="fade-right" className="">
-          <p className="font-bold border-b-4   border-gray-500 w-32  text-4xl  text-yellow-500">
-            {" "}
+      <div className="max-w-6xl mx-auto px-4">
+        {/* Section Title */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
             Contact
+          </h2>
+          <p className="text-gray-400 mt-2">
+            Submit the form below to get in touch with me
           </p>
-          <p className="py-6"> Submit the form below to get touch with me</p>
         </div>
-        <div data-aos="flip-up">
+
+        {/* Contact Form */}
+        <div className="flex flex-col items-center" data-aos="flip-up">
           <form
             action="https://getform.io/f/40851dd3-d75d-4723-96b6-01869d1c8d3e"
             method="POST"
-            className="flex flex-col items-center "
+            className="w-full max-w-md"
           >
-            <input
-              type="text"
-              name="name"
-              placeholder="enter your name"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none  w-72 md:w-96"
-            />
+            {/* Name Input */}
+            <div className="mb-4">
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                className="w-full p-3 bg-transparent border-2 border-gray-700 rounded-lg text-white focus:outline-none focus:border-yellow-500"
+                required
+              />
+            </div>
 
-            <input
-              type="email"
-              name="email"
-              placeholder="enter your email"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none w-72 md:w-96 m-4 "
-            />
-            <textarea
-              rows="10"
-              className=" p-2 bg-transparent border-2 rounded-md text-white focus:outline-none w-72 md:w-96 "
-            ></textarea>
-            <div className=" flex justify-center items-center">
-              <button className="  group bg-gradient-to-r from-indigo-500 via-yellow-600 to-cyan-500 md:w-40  w-32 flex mt-5 justify-center py-1 px-2   items-center rounded-md    ">
-                {" "}
-                Let's talk
+            {/* Email Input */}
+            <div className="mb-4">
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                className="w-full p-3 bg-transparent border-2 border-gray-700 rounded-lg text-white focus:outline-none focus:border-yellow-500"
+                required
+              />
+            </div>
+
+            {/* Message Textarea */}
+            <div className="mb-6">
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Enter your message"
+                className="w-full p-3 bg-transparent border-2 border-gray-700 rounded-lg text-white focus:outline-none focus:border-yellow-500"
+                required
+              ></textarea>
+            </div>
+
+            {/* Submit Button */}
+            <div className="text-center">
+              <button
+                type="submit"
+                className="px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-500 text-black font-semibold rounded-lg hover:from-yellow-600 hover:to-orange-600 transition-colors"
+              >
+                Let's Talk
               </button>
             </div>
           </form>
         </div>
 
-        <div>
-          <ul className="flex   md:justify-end  justify-center  gap-10 mt-10  flex-row">
-            <li className=" hover:scale-125 transition-transform duration-200  ">
-              {" "}
+        {/* Social Links */}
+        <div className="mt-12">
+          <ul className="flex justify-center gap-6">
+            <li>
               <a
                 href="https://github.com/vineethkumar12"
-                rel="noreferrer"
                 target="_blank"
-                className="   hover:text-green-500   text-yellow-500"
+                rel="noopener noreferrer"
+                className="text-yellow-500 hover:text-green-500 transition-colors"
               >
-                {" "}
-                <i className="fa-brands fa-github  fa-lg"></i>
+                <FaGithub className="text-2xl" />
               </a>
             </li>
-
-            <li className=" rounded-md hover:scale-125 transition-transform duration-200   ">
-              {" "}
+            <li>
               <a
                 href="https://www.linkedin.com/in/vineeth-kumar-6358a2231/"
-                rel="noreferrer"
                 target="_blank"
-                className="  hover:text-green-500  text-yellow-500"
+                rel="noopener noreferrer"
+                className="text-yellow-500 hover:text-green-500 transition-colors"
               >
-                <i className="fa-brands fa-linkedin-in fa-lg"></i>{" "}
-              </a>{" "}
+                <FaLinkedin className="text-2xl" />
+              </a>
             </li>
-            <li className=" rounded-md hover:scale-125 transition-transform duration-200   ">
-              {" "}
+            <li>
               <a
                 href="https://www.youtube.com/@VineethTechFusion"
-                rel="noreferrer"
                 target="_blank"
-                className=" hover:text-green-500  text-yellow-500"
+                rel="noopener noreferrer"
+                className="text-yellow-500 hover:text-green-500 transition-colors"
               >
-                <i className="fa-brands fa-youtube fa-lg"></i>
-              </a>{" "}
+                <FaYoutube className="text-2xl" />
+              </a>
             </li>
-
-            <li className=" hover:scale-125 transition-transform duration-200  rounded-md  duration-300    ">
-              {" "}
+            <li>
               <a
                 href="https://www.facebook.com/adepuvineeth.vini"
-                rel="noreferrer"
                 target="_blank"
-                className=" hover:text-green-500  text-yellow-500"
+                rel="noopener noreferrer"
+                className="text-yellow-500 hover:text-green-500 transition-colors"
               >
-                <i className="fa-brands fa-facebook fa-lg"></i>
-              </a>{" "}
+                <FaFacebook className="text-2xl" />
+              </a>
             </li>
-            <li className="hover:scale-125 transition-transform duration-200   rounded-md  duration-300 ">
-              {" "}
+            <li>
               <a
                 href="mailto:adepuvineethvinni@gmail.com"
-                rel="noreferrer"
                 target="_blank"
-                className="  hover:text-green-500   text-yellow-500"
+                rel="noopener noreferrer"
+                className="text-yellow-500 hover:text-green-500 transition-colors"
               >
-                <i className="fa-solid fa-envelope fa-lg"></i>
-              </a>{" "}
+                <FaEnvelope className="text-2xl" />
+              </a>
             </li>
           </ul>
         </div>
-        <div>
-          <h1 className="text-gray-400 -mt-2  hidden md:block">
-            Copyright:©vineethkumar 2024
-          </h1>
+
+        {/* Footer */}
+        <div className="mt-12 text-center text-gray-400">
+          <p>Copyright © Vineeth Kumar 2025</p>
         </div>
       </div>
     </div>

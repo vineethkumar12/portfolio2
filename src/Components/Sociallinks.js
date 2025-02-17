@@ -10,10 +10,10 @@ export const Sociallinks = () => {
             href="https://github.com/vineethkumar12"
             rel="noreferrer"
             target="_blank"
-            className=" flex justify-between items-center w-full  text-yellow-500"
+            className=" flex justify-between items-center w-full   text-yellow-500"
           >
             {" "}
-            <span className="gradient-text"> Github</span>{" "}
+            <span className="text-white"> Github</span>{" "}
             <i className="fa-brands fa-github  fa-lg"></i>
           </a>
         </li>
@@ -26,7 +26,7 @@ export const Sociallinks = () => {
             target="_blank"
             className="flex justify-between items-center w-full text-yellow-500"
           >
-            <span className="gradient-text">Linkedin</span>
+            <span className="text-white">Linkedin</span>
             <i className="fa-brands fa-linkedin-in fa-lg"></i>{" "}
           </a>{" "}
         </li>
@@ -38,7 +38,7 @@ export const Sociallinks = () => {
             target="_blank"
             className="flex justify-between items-center w-full text-yellow-500"
           >
-            <span className="gradient-text"> YouTube</span>
+            <span className="text-white"> YouTube</span>
             <i className="fa-brands fa-youtube fa-lg"></i>
           </a>{" "}
         </li>
@@ -50,7 +50,7 @@ export const Sociallinks = () => {
             target="_blank"
             className="flex justify-between items-center w-full text-yellow-500"
           >
-            <span className="gradient-text">Facebook</span>
+            <span className="text-white">Facebook</span>
             <i className="fa-brands fa-facebook fa-lg"></i>
           </a>{" "}
         </li>
@@ -62,7 +62,7 @@ export const Sociallinks = () => {
             target="_blank"
             className="flex justify-between  items-center w-full text-yellow-500"
           >
-            <span className="gradient-text">Mail</span>
+            <span className="text-white">Mail</span>
             <i className="fa-solid fa-envelope fa-lg"></i>
           </a>{" "}
         </li>

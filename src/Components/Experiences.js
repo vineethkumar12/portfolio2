@@ -5,52 +5,71 @@ import css from "../assets/css.png";
 import react from "../assets/react.png";
 import javascript from "../assets/javascript.png";
 import tailwind from "../assets/tailwind.png";
+import { motion } from "framer-motion"; // For animations
 
-import Tilt from "./Tilt";
-import "./N.css";
-const experience = [
-  { id: 1, nam: "React", src: react, st: "shadow-blue-500" },
-  { id: 2, nam: "javascript", src: javascript, st: "shadow-yellow-500" },
-  { id: 3, nam: "Tailwind", src: tailwind, st: "shadow-sky-500" },
-  { id: 4, nam: "Css", src: css, st: "shadow-blue-500" },
-  { id: 5, nam: "Html", src: html, st: "shadow-orange-500" },
-  { id: 6, nam: "Github", src: github, st: "shadow-gray-500" },
+const skills = [
+  { id: 1, name: "React", src: react, color: "from-blue-500 to-blue-700" },
+  {
+    id: 2,
+    name: "JavaScript",
+    src: javascript,
+    color: "from-yellow-400 to-yellow-600",
+  },
+  { id: 3, name: "Tailwind", src: tailwind, color: "from-sky-400 to-sky-600" },
+  { id: 4, name: "CSS", src: css, color: "from-blue-400 to-blue-600" },
+  { id: 5, name: "HTML", src: html, color: "from-orange-500 to-orange-700" },
+  { id: 6, name: "GitHub", src: github, color: "from-gray-400 to-gray-600" },
 ];
 
 export const Experiences = () => {
   return (
     <div
       id="skills"
-      className=" z-10 bg-gradient-to-b from-black to-gray-800  text-white-500 text-white  w-full md:h-screen"
+      className="bg-gradient-to-b from-black to-gray-800 text-white w-full py-16"
     >
-      <div className="flex flex-col justify-center    h-full mx-auto  p-4 max-w-screen-lg">
-        <div className="mt-5">
-          <p className="font-bold border-b-4   border-gray-500  text-4xl  text-yellow-500   w-24">
+      <div className="max-w-6xl mx-auto px-4">
+        {/* Section Title */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
             Skills
+          </h2>
+          <p className="text-gray-400 mt-2">
+            These are the technologies I've mastered
           </p>
-          <p className="py-6"> I learned this kind of technologies</p>
         </div>
 
-        <Tilt options={{ max: 25 }}>
-          <div className=" grid  text-center py-8  mb-10 md:-mb-20 gap-8 px-12 sm:px-0 md:grid-cols-3 sm:grid-cols-2">
-            {experience.map((src, i) => {
-              return (
-                <div
-                  data-aos="zoom-in"
-                  key={experience[i].id}
-                  className={`  animate shadow-md ${experience[i].st} rounded-lg`}
-                >
+        {/* Skills Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {skills.map((skill) => (
+            <motion.div
+              key={skill.id}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="flex justify-center"
+              data-aos="zoom-in"
+            >
+              <div
+                className={`relative w-32 h-32 rounded-full bg-gradient-to-b ${skill.color} p-1 shadow-lg hover:shadow-xl transition-shadow`}
+              >
+                {/* Skill Icon */}
+                <div className="w-full h-full bg-gray-800 rounded-full flex items-center justify-center">
                   <img
-                    src={experience[i].src}
-                    alt=""
-                    className="hover:scale-125 w-20 mx-auto h-24 mt-3 rounded-md  duration-200"
+                    src={skill.src}
+                    alt={skill.name}
+                    className="w-16 h-16 hover:scale-110 transition-transform"
                   />
-                  <p className="mt-4">{experience[i].nam}</p>
                 </div>
-              );
-            })}
-          </div>
-        </Tilt>
+
+                {/* Skill Name */}
+                <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
+                  <p className="text-lg font-semibold text-yellow-500">
+                    {skill.name}
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </div>
   );

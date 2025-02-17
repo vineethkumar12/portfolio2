@@ -1,116 +1,142 @@
-import React from "react";
-import chat from "../assets/portfolio/chat.png";
-import stopwatch from "../assets/portfolio/stopwatch.jpg";
-import movies1 from "../assets/portfolio/avengers.png";
-import tic from "../assets/portfolio/tic-toc.png";
-import face1 from "../assets/portfolio/face1.jpg";
-import robots1 from "../assets/portfolio/whatsapp-chat-analyser.png";
-import Parkandgo from "../assets/parkandgo.png";
-import Tilt from "./Tilt";
+import React, { useState } from "react";
+import { FiPlayCircle } from "react-icons/fi"; // Video icon
+import { projects } from "../Components/portfolioData"; // Your projects data
+import { FiExternalLink, FiGithub } from "react-icons/fi";
+
 export const Portfolio = () => {
-  const portfolio = [
-    {
-      id: 1,
-      src: Parkandgo,
-      link1: "https://parkngo.csre.in/#/signin ",
-      name: "Park and GO",
-      about:
-        "Park and Go is an intuitive app for easy parking spot selection, booking, payment, and tracking, complete with exclusive offers.",
-    },
-    {
-      id: 2,
-      src: chat,
-      link1: "https://vineethkumar12.github.io/chatapplication/",
-      name: "Chat Application",
-      about:
-        "The chat app offers login and registration, user search by ID or username, messaging, and image sharing.",
-    },
-    {
-      id: 3,
-      src: movies1,
-      link1: "https://vineethkumar12.github.io/Moviesappwithalan/",
-      name: "Moviesapp with Alan",
-      about:
-        "Moves app by Alan AI offers effortless movie browsing with intuitive commands for trailers, details, and seamless navigation",
-    },
-    {
-      id: 4,
-      src: tic,
-      link1: "https://vineethkumar12.github.io/tic-toc-toe/",
-      name: "Tic-Toc-Toe",
-      about:
-        "A Tic-Tac-Toe game is a two-player strategy game played on a 3x3 grid, where players take turns marking spaces to achieve three in a row",
-    },
-    {
-      id: 5,
-      src: face1,
-      link1: "https://vineethkumar12.github.io/facedetectionapp/",
-      name: "Face Detection Application",
-      about:
-        "The Face Detection app identifies faces in uploaded images, highlighting them with boxes, and offers sign-in and customization for easy use",
-    },
-    {
-      id: 6,
-      src: stopwatch,
-      link1: "https://vineethkumar12.github.io/stopwatch/",
-      name: "Stop Watch",
-      about:
-        "A stopwatch website is an online tool that allows users to measure time intervals with start, stop, and reset features",
-    },
-  ];
+  const [selectedVideo, setSelectedVideo] = useState(null); // Store the selected video URL
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Function to open the modal and set the video
+  const openModal = (videoUrl) => {
+    setSelectedVideo(videoUrl);
+    setIsModalOpen(true);
+  };
+
+  // Function to close the modal
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedVideo(null);
+  };
 
   return (
-    <div
-      id="Projects"
-      className="bg-gradient-to-b from-black to-gray-800 text-white    w-full  "
+    <section
+      id="projects"
+      className="bg-gradient-to-b from-black to-gray-800 py-20 px-4 md:px-8"
     >
-      <div className="flex flex-col justify-center  h-full mx-auto  p-4 max-w-screen-lg">
-        <div className=" mt-12">
-          <p className="font-bold border-b-4  text-yellow-500  border-gray-500 w-32  text-4xl ">
-            {" "}
-            Projects
+      <div className="max-w-6xl mx-auto">
+        {/* Section Header */}
+        <div className="mb-16 text-center">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+            My Projects
+          </h2>
+          <p className="text-gray-400 text-lg">
+            Explore my latest web development projects
           </p>
-          <p className="py-6"> Check out some of my projects right here</p>
         </div>
 
-        <div className=" grid gap-10 px-12   mb-10 md:-mb-20  sm:px-0 md:grid-cols-3 sm:grid-cols-2">
-          {portfolio.map((src, id) => {
-            return (
-              <Tilt key={id}>
-                <div
-                  data-aos="zoom-in"
-                  className=" overflow-hidden shadow-md shadow-gray-500   rounded-lg"
-                >
-                  <div className="">
-                    <a href={src.link1} target="new">
-                      {" "}
-                      <img
-                        src={src.src}
-                        alt="v "
-                        className="hover:scale-105 duration-200 shadow-md shadow-gray-500   rounded-md cursor-pointer"
-                      />
-                    </a>
-                  </div>
-                  <div className="card-inside  flex justify-center flex-col   px-2 items-center">
-                    <a href={src.link1}>
-                      {" "}
-                      <h1 className=" border-2xl  text-xl  font-bold gradient-text py-3 duration-150 ">
-                        {src.name}
-                      </h1>{" "}
-                      <p className="   ">{src.about}</p>
-                      <div>
-                        <h4 className="  mb-2 mt-2  gradient-text  ">
-                          HTML,CSS,React Js
-                        </h4>
-                      </div>
-                    </a>
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project) => (
+            <div
+              data-aos="zoom-in"
+              key={project.name}
+              className="group relative h-full bg-gray-800 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
+            >
+              {/* Project Image */}
+              <div className="relative aspect-video overflow-hidden">
+                <img
+                  src={project.src}
+                  alt={project.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <div className="space-y-2">
+                    <h3 className="text-xl font-bold text-white">
+                      {project.name}
+                    </h3>
+                    <p className="text-gray-300 line-clamp-2">
+                      {project.about}
+                    </p>
                   </div>
                 </div>
-              </Tilt>
-            );
-          })}
+              </div>
+
+              {/* Project Content */}
+              <div className="p-6">
+                {/* Tech Stack */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tech.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 text-sm rounded-full bg-gray-700 text-gray-300"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Links */}
+                <div className="flex gap-4">
+                  {project.link1 && (
+                    <a
+                      href={project.link1}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-colors"
+                    >
+                      <FiExternalLink className="text-lg" />
+                      Live Demo
+                    </a>
+                  )}
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-400 hover:text-gray-300 transition-colors"
+                    >
+                      <FiGithub className="text-lg" />
+                      Code
+                    </a>
+                  )}
+                </div>
+
+                {/* Play Video Button */}
+                {project.video && (
+                  <div
+                    onClick={() => openModal(project.video)}
+                    className="cursor-pointer mt-4 text-yellow-400 flex items-center gap-2"
+                  >
+                    <FiPlayCircle className="text-2xl" />
+                    <span>Watch Video</span>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+
+      {/* Modal for Video */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+          <div className="bg-gray-900 p-4 rounded-lg relative max-w-2xl w-full">
+            <button
+              onClick={closeModal}
+              className="absolute top-0 right-0 p-2 text-white"
+            >
+              X
+            </button>
+            <video controls className="w-full rounded-xl max-h-[400px] mx-auto">
+              <source src={selectedVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      )}
+    </section>
   );
 };

@@ -1,16 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { useState, useEffect } from "react";
-import "./N.css";
 import { Link } from "react-scroll";
+import { FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
 const Navbar = () => {
-  const [nav, setnav] = useState(false);
-
-  const [visible, setVisible] = useState(true);
+  const [nav, setNav] = useState(false); // For mobile menu toggle
+  const [visible, setVisible] = useState(true); // For scroll behavior
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
+  // Handle scroll to hide/show navbar
   const handleScroll = () => {
     const currentScrollTop =
       window.pageYOffset || document.documentElement.scrollTop;
@@ -21,6 +19,7 @@ const Navbar = () => {
     }
     setLastScrollTop(currentScrollTop);
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -28,104 +27,115 @@ const Navbar = () => {
     };
   }, [lastScrollTop]);
 
+  // Navbar links
   const links = [
-    {
-      id: 1,
-      link: "home",
-    },
-    {
-      id: 2,
-      link: "about",
-    },
-    {
-      id: 3,
-      link: "Projects",
-    },
-    {
-      id: 4,
-      link: "Experience",
-    },
-    {
-      id: 5,
-      link: "skills",
-    },
-    {
-      id: 6,
-      link: "contact",
-    },
+    { id: 1, link: "home", label: "Home" },
+    { id: 2, link: "about", label: "About" },
+    { id: 3, link: "projects", label: "Projects" },
+    { id: 4, link: "Experience", label: "Experience" },
+    { id: 5, link: "testimonials", label: "Testimonials" },
+    { id: 6, link: "contact", label: "Contact" },
   ];
 
   return (
-    <div>
-      <div className="flex  fixed  z-20 justify-between items-center    w-full h-20 px-4 ">
-        <div className="flex">
-          <div className="   animate-pulse  text-5xl hover:animate-bounce">
-            {" "}
-            🕸️
-          </div>
-          <div>
-            <h1 className="ml-2 font-a text-5xl text-yellow-500">vk</h1>
-          </div>
+    <nav
+      className={`fixed w-full z-20 bg-black/90 backdrop-blur-sm ${
+        visible ? "translate-y-0" : "-translate-y-20"
+      } transition-transform duration-300`}
+    >
+      <div className="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+        {/* Logo */}
+        <div className="flex items-center">
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+            VK
+          </h1>
         </div>
 
-        <div>
-          <ul
-            className={`hidden  ${
-              visible ? "translate-y-0" : "-translate-y-16"
-            } md:flex  nav  space-x-9   mr-16 `}
-          >
-            {links.map((link, i) => {
-              return (
-                <li
-                  key={link.id}
-                  className="Link gradient-text text-yellow-500 visited:text-red-700  capitalize flex justify-between cursor-pointer  hover:scale-125 duration-200 font-medium "
-                >
-                  <Link
-                    to={links[i].link}
-                    smooth={true}
-                    offset={50}
-                    spy={true}
-                    duration={500}
-                  >
-                    {links[i].link}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex space-x-8">
+          {links.map((link) => (
+            <li
+              key={link.id}
+              className="text-gray-300 hover:text-yellow-500 transition-colors font-medium capitalize cursor-pointer"
+            >
+              <Link
+                to={link.link}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                spy={true}
+                activeClass="text-yellow-500"
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-        <div onClick={() => setnav(!nav)} className="md:hidden text-yellow-500">
+        {/* Mobile Menu Toggle */}
+        <div
+          onClick={() => setNav(!nav)}
+          className="md:hidden text-yellow-500 text-2xl cursor-pointer"
+        >
           {nav ? (
-            <FontAwesomeIcon className="cursor-pointer " icon={faTimes} />
+            <FontAwesomeIcon icon={faTimes} />
           ) : (
-            <FontAwesomeIcon className="cursor-pointer" icon={faBars} />
+            <FontAwesomeIcon icon={faBars} />
           )}
         </div>
 
+        {/* Mobile Menu */}
         {nav && (
-          <ul className="flex  md:hidden social4    text-yellow-500 j flex-col absolute  justify-center  h-80 right-0   mb-8 rounded-lg items-center ml-9  gap-4 w-24   bg-gradient-to-b from-gray-800 via-black  to-gray-800 text-white-500   ">
-            {links.map((link, i) => {
-              return (
-                <li
-                  key={link.id}
-                  className=" hover:underline capitalize flex justify-between cursor-pointer  hover:scale-125 duration-200 font-medium "
+          <ul className="md:hidden absolute top-16 right-0 w-48 bg-black/90 backdrop-blur-sm rounded-lg shadow-lg py-4">
+            {links.map((link) => (
+              <li
+                key={link.id}
+                className="text-gray-300 hover:text-yellow-500 transition-colors font-medium capitalize cursor-pointer px-6 py-2"
+              >
+                <Link
+                  onClick={() => setNav(false)}
+                  to={link.link}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
                 >
-                  <Link
-                    onClick={() => setnav(!nav)}
-                    to={links[i].link}
-                    smooth
-                    offsetduration={500}
-                  >
-                    {links[i].link}
-                  </Link>
-                </li>
-              );
-            })}
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <div className=" bottom-6 l flex justify-start space-x-3 px-6">
+                <a
+                  href="https://github.com/vineethkumar12"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-yellow-500 hover:text-green-500 transition-colors cursor-pointer "
+                >
+                  <FaGithub className="text-2xl" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/vineeth-kumar-6358a2231/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-yellow-500 hover:text-green-500 transition-colors cursor-pointer"
+                >
+                  <FaLinkedin className="text-2xl" />
+                </a>
+                <a
+                  href="https://www.youtube.com/@VineethTechFusion"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-yellow-500 hover:text-green-500 transition-colors cursor-pointer"
+                >
+                  <FaYoutube className="text-2xl" />
+                </a>
+              </div>
+            </li>
           </ul>
         )}
       </div>
-    </div>
+    </nav>
   );
 };
+
 export default Navbar;
