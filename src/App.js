@@ -13,6 +13,7 @@ import "aos/dist/aos.css";
 import { Exp } from "./Components/Exp";
 import Particle from "./Particle";
 import { Testimonials } from "./Components/Testmonials";
+import { Certificates } from "./Components/Certificates";
 
 function App() {
   // const a="grgjkhjgkkgdkhjtgkjrigjjjjjjjjjjjjjjj"
@@ -27,7 +28,7 @@ function App() {
     <div className="App">
       <Particle />
       <Helmet>
-        <title>Vineeth Kumar Portfolio</title>
+        <title>Mitra Varun Portfolio</title>
         <meta
           name="description"
           content="Hi, I’m Vineeth Kumar. Explore my portfolio to see my projects and passion for creating websites and innovative solutions!"
@@ -40,10 +41,11 @@ function App() {
 
       <Home />
       <About />
-      <Portfolio />
-      <Exp />
       <Experiences />
-      <Testimonials />
+      <Exp />
+
+      <Portfolio />
+      <Certificates />
       <Contact />
       <Sociallinks />
     </div>

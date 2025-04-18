@@ -2,7 +2,14 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
-import { FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaYoutube,
+  FaCode,
+  FaAngleLeft,
+  FaAngleRight,
+} from "react-icons/fa";
 const Navbar = () => {
   const [nav, setNav] = useState(false); // For mobile menu toggle
   const [visible, setVisible] = useState(true); // For scroll behavior
@@ -33,22 +40,24 @@ const Navbar = () => {
     { id: 2, link: "about", label: "About" },
     { id: 3, link: "projects", label: "Projects" },
     { id: 4, link: "Experience", label: "Experience" },
-    { id: 5, link: "testimonials", label: "Testimonials" },
+    { id: 5, link: "skills", label: "skills" },
     { id: 6, link: "contact", label: "Contact" },
   ];
 
   return (
     <nav
-      className={`fixed w-full z-20 bg-black/90 backdrop-blur-sm ${
+      className={`fixed w-full z-20  backdrop-blur-sm ${
         visible ? "translate-y-0" : "-translate-y-20"
       } transition-transform duration-300`}
     >
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
-        {/* Logo */}
-        <div className="flex items-center">
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-            VK
+        <div className="flex items-center space-x-2">
+          <FaAngleLeft className="w-5 h-5 text-yellow-500" />
+
+          <h1 className="text-3xl font-bold bg-yellow-500 bg-clip-text text-transparent">
+            MV
           </h1>
+          <FaAngleRight className="w-5 h-5 text-yellow-500" />
         </div>
 
         {/* Desktop Menu */}

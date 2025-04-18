@@ -5,6 +5,7 @@ import {
   FaYoutube,
   FaFacebook,
   FaEnvelope,
+  FaCode,
 } from "react-icons/fa"; // Icons
 
 export const Contact = () => {
@@ -16,7 +17,7 @@ export const Contact = () => {
       <div className="max-w-6xl mx-auto px-4">
         {/* Section Title */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
             Contact
           </h2>
           <p className="text-gray-400 mt-2">
@@ -27,7 +28,7 @@ export const Contact = () => {
         {/* Contact Form */}
         <div className="flex flex-col items-center" data-aos="flip-up">
           <form
-            action="https://getform.io/f/40851dd3-d75d-4723-96b6-01869d1c8d3e"
+            action="https://getform.io/f/aqoklxra"
             method="POST"
             className="w-full max-w-md"
           >
@@ -81,7 +82,7 @@ export const Contact = () => {
           <ul className="flex justify-center gap-6">
             <li>
               <a
-                href="https://github.com/vineethkumar12"
+                href="https://github.com/mitravarun123"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-yellow-500 hover:text-green-500 transition-colors"
@@ -91,7 +92,7 @@ export const Contact = () => {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/vineeth-kumar-6358a2231/"
+                href="https://www.linkedin.com/in/mitravarun123/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-yellow-500 hover:text-green-500 transition-colors"
@@ -111,17 +112,17 @@ export const Contact = () => {
             </li>
             <li>
               <a
-                href="https://www.facebook.com/adepuvineeth.vini"
+                href="https://leetcode.com/u/mitravarun2702/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-yellow-500 hover:text-green-500 transition-colors"
               >
-                <FaFacebook className="text-2xl" />
+                <FaCode size={24} />
               </a>
             </li>
             <li>
               <a
-                href="mailto:adepuvineethvinni@gmail.com"
+                href="mailto:mitravarun2702@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-yellow-500 hover:text-green-500 transition-colors"
@@ -134,7 +135,7 @@ export const Contact = () => {
 
         {/* Footer */}
         <div className="mt-12 text-center text-gray-400">
-          <p>Copyright © Vineeth Kumar 2025</p>
+          <p>Copyright © Mitra Varun 2025</p>
         </div>
       </div>
     </div>
