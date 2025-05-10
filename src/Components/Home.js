@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../assets/VineethKumar_Adepu-Resume.pdf";
+import resume from "../assets/VineethKumar_Adepu-Resume_1.pdf";
 import { Link } from "react-scroll";
 import { FaArrowRight, FaDownload } from "react-icons/fa"; // Icons
 import { motion } from "framer-motion"; // For animations

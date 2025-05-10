@@ -15,7 +15,7 @@ export const projects = [
     github: "https://github.com/vineethkumar12/Park-and-go",
     name: "Park and GO",
     about:
-      "Park and Go is an intuitive app for easy parking spot selection, booking, payment, and tracking, complete with exclusive offers.",
+      "Park and Go is an intuitive app for easy parking spot selection, booking, payment, and tracking, complete with exclusive offers.(Not Responsive)",
     tech: ["React", "Node.js", "Postgress Sql", " CSS"],
     video: "",
   },
@@ -38,14 +38,14 @@ export const projects = [
     github: "https://github.com/vineethkumar12/chatapplication",
     name: "Chat Application",
     about:
-      "The chat app offers login and registration, user search by ID or username, messaging, and image sharing.",
+      "The chat app offers login and registration, user search by ID or username, messaging, and image sharing.(Not Responsive)",
     tech: ["React", "Firebase", "Tailwind CSS"],
     video: "",
   },
   {
     id: 4,
     src: movies1,
-    link1: "https://vineethkumar12.github.io/Moviesappwithalan/",
+    link1: "",
     github: "https://github.com/vineethkumar12/Moviesappwithalan",
     name: "Movies App with Alan",
     about:
@@ -56,7 +56,7 @@ export const projects = [
   {
     id: 5,
     src: patiot,
-    link1: "https:patiot.in",
+    link1: "https://patiot.in",
     github: "https://github.com/vineethkumar12/Automation",
     name: "Business Portfolio Website",
     about:

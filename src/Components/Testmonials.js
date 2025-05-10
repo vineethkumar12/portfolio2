@@ -13,16 +13,16 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Bharath",
-    role: "CEO, PAT IoT Solutions.",
+    name: "Raju",
+    role: "Associate Professor , Kitsw college",
     feedback:
       "Vineeth is a true professional. His ability to understand our requirements and translate them into a stunning website was impressive. Highly recommend him for any web development project!",
     image: "https://via.placeholder.com/150", // Replace with actual image URL
   },
   {
     id: 3,
-    name: "Raju",
-    role: "Associate Professor , Kitsw college",
+    name: "Bharath",
+    role: "CEO, PAT IoT Solutions.",
     feedback:
       "Vineeth's expertise in React and modern web technologies is outstanding. He helped us build a scalable and efficient web application that has significantly improved our business operations.",
     image: "https://via.placeholder.com/150", // Replace with actual image URL

@@ -27,7 +27,10 @@ export const About = () => {
         {/* Content Container */}
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Image Section */}
-          <div className="w-48 h-48 md:w-60 md:h-60 rounded-full z-20 overflow-hidden shadow-lg shadow-yellow-500/50 hover:shadow-yellow-500/70 transition-shadow duration-300">
+          <div
+            data-aos="zoom-in"
+            className="w-48 h-48 md:w-60 md:h-60 rounded-full z-10 overflow-hidden shadow-lg shadow-yellow-500/50 hover:shadow-yellow-500/70 transition-shadow duration-300"
+          >
             <img
               src={h}
               alt="Vineeth Kumar"
