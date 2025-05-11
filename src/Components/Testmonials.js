@@ -33,7 +33,7 @@ export const Testimonials = () => {
   return (
     <div
       id="testimonials"
-      className="bg-gradient-to-b from-gray-800 to-black text-white w-full py-16"
+      className="bg-gradient-to-b from-black to-gray-800 text-white w-full py-16"
     >
       <div className="max-w-6xl mx-auto px-4">
         {/* Section Title */}

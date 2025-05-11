@@ -1,19 +1,15 @@
 import React, { useState } from "react";
-import { FiPlayCircle } from "react-icons/fi"; // Video icon
-import { projects } from "../Components/portfolioData"; // Your projects data
-import { FiExternalLink, FiGithub } from "react-icons/fi";
-
+import { FiPlayCircle, FiExternalLink, FiGithub } from "react-icons/fi";
+import { projects } from "../Components/portfolioData";
 export const Portfolio = () => {
-  const [selectedVideo, setSelectedVideo] = useState(null); // Store the selected video URL
+  const [selectedVideo, setSelectedVideo] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Function to open the modal and set the video
   const openModal = (videoUrl) => {
     setSelectedVideo(videoUrl);
     setIsModalOpen(true);
   };
 
-  // Function to close the modal
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedVideo(null);
@@ -35,13 +31,13 @@ export const Portfolio = () => {
           </p>
         </div>
 
-        {/* Projects Grid */}
+        {/* Projects Grid - Original Structure */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
               data-aos="zoom-in"
               key={project.name}
-              className="group relative h-full bg-gray-800 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
+              className="group relative h-full bg-gray-800 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-yellow-400/30"
             >
               {/* Project Image */}
               <div className="relative aspect-video overflow-hidden">
@@ -71,7 +67,7 @@ export const Portfolio = () => {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-sm rounded-full bg-gray-700 text-gray-300"
+                      className="px-3 py-1 text-xs rounded-full bg-gray-700/50 text-gray-300 border border-gray-600"
                     >
                       {tech}
                     </span>
@@ -85,7 +81,7 @@ export const Portfolio = () => {
                       href={project.link1}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-colors"
+                      className="flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-colors text-sm"
                     >
                       <FiExternalLink className="text-lg" />
                       Live Demo
@@ -96,7 +92,7 @@ export const Portfolio = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-400 hover:text-gray-300 transition-colors"
+                      className="flex items-center gap-2 text-gray-400 hover:text-gray-300 transition-colors text-sm"
                     >
                       <FiGithub className="text-lg" />
                       Code
@@ -104,15 +100,15 @@ export const Portfolio = () => {
                   )}
                 </div>
 
-                {/* Play Video Button */}
+                {/* Video Button */}
                 {project.video && (
-                  <div
+                  <button
                     onClick={() => openModal(project.video)}
-                    className="cursor-pointer mt-4 text-yellow-400 flex items-center gap-2"
+                    className="mt-4 flex items-center gap-2 text-sm text-yellow-400 hover:text-yellow-300 transition-colors"
                   >
-                    <FiPlayCircle className="text-2xl" />
-                    <span>Watch Video</span>
-                  </div>
+                    <FiPlayCircle className="text-xl" />
+                    Watch Demo
+                  </button>
                 )}
               </div>
             </div>
@@ -120,20 +116,22 @@ export const Portfolio = () => {
         </div>
       </div>
 
-      {/* Modal for Video */}
+      {/* Video Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-gray-900 p-4 rounded-lg relative max-w-2xl w-full">
+        <div className="fixed inset-0 bg-black/90 flex justify-center items-center z-50 p-4">
+          <div className="relative w-full max-w-4xl">
             <button
               onClick={closeModal}
-              className="absolute top-0 right-0 p-2 text-white"
+              className="absolute -top-10 right-0 text-white hover:text-yellow-400 transition-colors"
             >
-              X
+              ✕ Close
             </button>
-            <video controls className="w-full rounded-xl max-h-[400px] mx-auto">
-              <source src={selectedVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <div className="aspect-video bg-black rounded-lg overflow-hidden">
+              <video controls autoPlay className="w-full h-full object-contain">
+                <source src={selectedVideo} type="video/mp4" />
+                Your browser doesn't support videos.
+              </video>
+            </div>
           </div>
         </div>
       )}

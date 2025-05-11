@@ -5,7 +5,7 @@ import { Home } from "./Components/Home";
 import { Sociallinks } from "./Components/Sociallinks";
 import { About } from "./Components/About";
 import { Portfolio } from "./Components/Portfolio";
-import { Experiences } from "./Components/Experiences";
+import { Skills } from "./Components/Skills";
 import { Contact } from "./Components/Contact";
 import { Helmet } from "react-helmet";
 import AOS from "aos";
@@ -13,6 +13,8 @@ import "aos/dist/aos.css";
 import { Exp } from "./Components/Exp";
 import Particle from "./Particle";
 import { Testimonials } from "./Components/Testmonials";
+import { Certificates } from "./Components/Certificates";
+import { ProjectInprogress } from "./ProjectInprogress";
 
 function App() {
   // const a="grgjkhjgkkgdkhjtgkjrigjjjjjjjjjjjjjjj"
@@ -40,9 +42,11 @@ function App() {
 
       <Home />
       <About />
-      <Portfolio />
       <Exp />
-      <Experiences />
+      <ProjectInprogress />
+      <Portfolio />
+
+      <Certificates />
       <Testimonials />
       <Contact />
       <Sociallinks />

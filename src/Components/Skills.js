@@ -21,10 +21,10 @@ const skills = [
   { id: 6, name: "GitHub", src: github, color: "from-gray-400 to-gray-600" },
 ];
 
-export const Experiences = () => {
+export const Skills = () => {
   return (
     <div
-      id="skills"
+      id="Skills"
       className="bg-gradient-to-b from-black to-gray-800 text-white w-full py-16"
     >
       <div className="max-w-6xl mx-auto px-4">
