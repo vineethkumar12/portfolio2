@@ -54,7 +54,7 @@ export const Exp = () => {
 
   return (
     <section
-      id="experience"
+      id="Experience"
       className="w-full min-h-screen bg-gradient-to-b from-black to bg-gray-800 text-white py-20"
     >
       <div className="max-w-4xl mx-auto px-4">
