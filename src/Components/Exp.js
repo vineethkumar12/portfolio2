@@ -18,7 +18,7 @@ export const Exp = () => {
       tech: [<SiReact key="react" />, <SiJavascript key="js" />],
       color: "from-blue-400 to-cyan-500",
     },
-    {
+    /*{
       id: 2,
       title: "XML Content Specialist (Full-Time)",
       company:
@@ -32,7 +32,8 @@ export const Exp = () => {
       icon: <FaFileCode className="text-xl" />,
       tech: [],
       color: "from-purple-400 to-pink-500",
-    },
+    
+    }*/
     {
       id: 3,
       title: "Freelance Projects",
